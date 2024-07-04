@@ -1,0 +1,3340 @@
+
+**********************************
+Debut de programme : 14/06/2024 10:00:16
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:00:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:07:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:07:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:09:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:09:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:10:14
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:10:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:10:44
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:10:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:11:20
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:11:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:11:52
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:11:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:14:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:14:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:15:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:15:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:16:21
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:17:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:19:56
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:19:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:20:24
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:20:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:20:53
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:21:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:22:33
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:22:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:22:52
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:23:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:23:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:24:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:24:49
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:24:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:26:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:27:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:27:21
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:30:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:30:17
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:30:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:31:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:31:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:32:39
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:32:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:33:29
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:33:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:36:47
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:37:08
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:38:54
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:39:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:39:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:39:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:40:12
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:40:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:42:11
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:42:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:45:53
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:45:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:47:20
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:47:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:48:37
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:48:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 10:50:02
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 10:50:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:08:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:08:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:12:17
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:12:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:15:46
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:15:51
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:19:14
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:19:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:22:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:22:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:22:27
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:22:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:22:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:22:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:23:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:24:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:24:35
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:24:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:25:14
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:25:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:26:34
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:26:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:30:02
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:30:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:31:00
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:31:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:32:01
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:34:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:35:58
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:37:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:37:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:37:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:38:23
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:39:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:39:18
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:39:31
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:39:32
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:39:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:40:50
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:40:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:43:34
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:43:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:45:27
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:45:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:48:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:48:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:49:30
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:49:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:52:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:53:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:55:07
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:55:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:57:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:57:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:57:41
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:57:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 11:59:27
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 11:59:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:07:08
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:07:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:08:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:08:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:09:16
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:09:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:10:21
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:11:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:21:22
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:21:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:25:10
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:25:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:30:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:30:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:42:37
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:42:42
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:42:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:43:00
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:43:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:44:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:44:30
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:45:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:45:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:45:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:45:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:45:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:46:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:47:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:47:24
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:47:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:47:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:47:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:50:00
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:50:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:50:24
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:50:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:51:05
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:51:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:51:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:51:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:52:10
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:52:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:52:53
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:52:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:53:35
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:53:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:54:58
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:55:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 12:58:51
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 12:58:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:49:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:49:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:51:02
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:51:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:51:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:51:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:52:10
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:52:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:53:25
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:53:31
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:55:22
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:55:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:55:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:55:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 13:59:38
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 13:59:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:00:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:01:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:06:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:06:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:07:53
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:08:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:08:46
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:08:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:11:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:11:38
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:29:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:29:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:31:18
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:31:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:32:28
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:32:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:32:56
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:33:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:36:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:36:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:38:41
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:38:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:41:00
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:41:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:41:09
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:41:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:42:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:42:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:42:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:42:51
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:43:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:43:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:46:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:46:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:46:44
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:46:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:48:01
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:48:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:48:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:48:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:49:18
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:49:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:49:32
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:49:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:50:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:50:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:51:12
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:52:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:52:54
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:52:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:53:02
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:53:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:53:47
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:53:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:54:46
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:54:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:56:00
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:56:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:56:32
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:56:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 14:59:08
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 14:59:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 15:00:23
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 15:00:31
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 15:01:05
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 15:01:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 15:01:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 15:02:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 15:02:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 15:02:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 15:03:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 15:03:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/06/2024 15:04:52
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/06/2024 15:04:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 11:16:49
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 11:19:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 11:19:40
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 11:19:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 11:20:27
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 11:27:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 13:50:38
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 13:51:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 13:52:03
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 13:52:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 13:52:54
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 13:53:00
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 13:53:50
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 13:54:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 13:54:34
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 13:55:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 13:57:56
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 13:58:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:30:14
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:30:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:35:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:36:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:37:21
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:37:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:38:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:38:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:39:24
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:40:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:40:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:41:00
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:41:38
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:42:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:42:20
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:42:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:43:11
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:45:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:46:34
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:46:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:47:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:47:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:50:08
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:50:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:54:50
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:54:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 14:56:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 14:56:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:03:29
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:03:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:05:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:05:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:07:53
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:07:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:09:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:09:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:10:15
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:10:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:11:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:12:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:19:52
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:19:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:30:35
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:30:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:32:08
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:32:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:32:59
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:33:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:34:34
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:34:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:35:23
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:35:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:39:11
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:39:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:40:00
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:40:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:42:07
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:42:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:43:51
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:43:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:44:31
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:44:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:45:15
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:45:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:48:33
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:48:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:49:04
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:49:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:50:02
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:50:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:52:03
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:52:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:53:23
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:53:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:56:08
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:56:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 15:59:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 15:59:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:07:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:07:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:10:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:10:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:14:41
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:14:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:15:38
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:15:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:16:37
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:16:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:21:44
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:21:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:25:20
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:25:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:27:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:27:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:29:34
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:29:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:30:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:30:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:32:20
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:32:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:33:11
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:33:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:34:27
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:34:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:35:04
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:35:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 01/07/2024 16:41:47
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 01/07/2024 16:41:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:19:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:19:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:20:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:20:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:21:09
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:21:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:22:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:24:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:24:31
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:24:38
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:24:40
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:24:51
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:26:25
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:26:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:30:11
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:30:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:32:28
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:32:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:34:47
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:34:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:36:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:36:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:37:18
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:37:22
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:37:49
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:37:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:38:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:39:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:40:10
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:40:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:40:15
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:41:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:41:40
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:41:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:42:16
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:42:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:45:30
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:45:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:47:09
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:47:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:48:12
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:48:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:50:22
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:50:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:54:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:54:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:55:52
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:55:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:56:50
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:56:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 09:57:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 09:57:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:05:11
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:05:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:06:04
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:06:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:07:25
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:07:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:08:15
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:09:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:09:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:10:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:11:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:11:42
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:13:24
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:13:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:14:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:14:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:16:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:16:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 10:19:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 10:19:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 11:27:41
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 11:27:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:31:16
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:31:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:31:35
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:31:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:32:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:32:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:32:12
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:32:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:32:20
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:32:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:32:46
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:33:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:33:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:33:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:36:14
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:36:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:37:35
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:37:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:39:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:39:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 02/07/2024 12:40:00
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 02/07/2024 12:40:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 13:58:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 13:58:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 13:58:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 13:59:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 14:49:16
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 14:50:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:08:09
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:08:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:08:33
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:11:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:11:09
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:11:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:12:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:13:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:13:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:14:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:15:38
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:15:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:16:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:16:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:17:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:18:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:22:44
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:22:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 03/07/2024 15:24:01
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 03/07/2024 15:24:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 12:49:23
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 12:49:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:01:59
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:02:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:02:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:03:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:04:03
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:05:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:07:12
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:07:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:09:03
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:11:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:11:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:11:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:12:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:12:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:25:28
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:25:31
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:26:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:26:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:27:36
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:27:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:42:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:43:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:43:58
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:44:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 13:44:32
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 13:44:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:14:29
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:14:31
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:14:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:14:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:22:54
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:24:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:25:06
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:25:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:28:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:29:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:29:56
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:30:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:31:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:31:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:44:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:44:51
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:44:57
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:49:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:49:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:50:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:51:18
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:51:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:53:19
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:53:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:54:05
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:54:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:55:31
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:55:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:56:22
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:56:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:56:51
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:56:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:58:24
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:58:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:58:53
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 14:59:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 14:59:16
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:00:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:00:21
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:01:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:01:29
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:01:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:02:32
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:02:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:03:31
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:03:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:20:22
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:20:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:21:02
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:21:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:21:26
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:22:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:25:08
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:26:08
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:26:12
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:26:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:27:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:27:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:27:48
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:27:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:28:29
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:28:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:28:54
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:29:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:29:30
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:29:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:30:03
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:30:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:30:33
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:30:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:35:55
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:36:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:36:46
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:36:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:38:05
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:38:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:39:59
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:40:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:48:32
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:48:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:49:04
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:49:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:49:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:49:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:49:54
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:50:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:52:04
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:52:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:57:44
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:58:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 15:59:09
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 15:59:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:01:40
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:01:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:02:30
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:02:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:03:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:03:22
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:03:45
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:05:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:05:39
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:05:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:08:08
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:08:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:09:14
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:10:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:10:17
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:10:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:10:39
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:10:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:11:29
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:12:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:20:43
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:20:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:23:21
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:23:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:35:58
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:36:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:48:30
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:48:42
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 16:49:13
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 16:49:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 17:16:23
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 17:16:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 17:47:37
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 17:47:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 17:49:27
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 17:49:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 04/07/2024 17:53:42
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 04/07/2024 17:53:48
+Fichier Log ferme
+**********************************

@@ -1,0 +1,74 @@
+ID Structure;Objectif,Limite,Resultat,Etat,,
+vessie;Max[Gy],<=54,,-,Recorad,
+vessie;Max[Gy],<=54,,-,Recorad,
+vessie;Max[Gy],<=45,,-,Recorad,
+Rectum;Max[Gy],<=45,,-,Recorad,
+Rectum;Max[Gy],<=45,,-,Recorad,
+Rectum;V10Gy,<=45,,-,Recorad,
+Rectum;V10%,<=45,,-,Recorad,
+Rectum;D10%,<=45,,-,Recorad,
+Rectum;D50cc,<=45,,-,Recorad,
+PTV;107 %, 
+PTV;95 %,95 %
+Rectum;30Gy ,30% 
+Rectum; , 
+Rectum; , 
+OGE;25 Gy, 
+OGE;D2% ,10Gy 
+OGE; , 
+cavité abdo;25 Gy, 
+cavité abdo;V25Gy ,175cc 
+cavité abdo; , 
+vessie;V16Gy ,17.5% 
+vessie; , 
+vessie; , 
+tête fémorale D;30 Gy, 
+tête fémorale D; , 
+PTV;107  %,  
+PTV;95  %,95  %
+Rectum;30Gy  ,30%  
+Rectum;  ,  
+Rectum;  ,  
+OGE;25  Gy,  
+OGE;D2%  ,10Gy  
+OGE;  ,  
+cavité abdo;25  Gy,  
+cavité abdo;V25Gy  ,175cc  
+cavité abdo;  ,  
+vessie;V16Gy  ,17.5%  
+vessie;  ,  
+vessie;  ,  
+tête fémorale D;30  Gy,  
+tête fémorale D;  ,  
+PTV;107  %,  
+PTV;95  %,95  %
+Rectum;30Gy  ,30%  
+Rectum;  ,  
+Rectum;  ,  
+OGE;25  Gy,  
+OGE;D2%  ,10Gy  
+OGE;  ,  
+cavité abdo;25  Gy,  
+cavité abdo;V25Gy  ,175cc  
+cavité abdo;  ,  
+vessie;V16Gy  ,17.5%  
+vessie;  ,  
+vessie;  ,  
+tête fémorale D;30  Gy,  
+tête fémorale D;  ,  
+PTV;107  %,  
+PTV;95  %,95  %
+Rectum;30Gy  ,30%  
+Rectum;  ,  
+Rectum;  ,  
+OGE;25  Gy,  
+OGE;D2%  ,10Gy  
+OGE;  ,  
+cavité abdo;25  Gy,  
+cavité abdo;V25Gy  ,175cc  
+cavité abdo;  ,  
+vessie;V16Gy  ,17.5%  
+vessie;  ,  
+vessie;  ,  
+tête fémorale D;30  Gy,  
+tête fémorale D;  ,  
