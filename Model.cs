@@ -33,6 +33,7 @@ namespace DoseCheck
             _logFile = new StreamWriter("Log.txt", true);
             _logFile.WriteLine($"\n**********************************");
             _logFile.WriteLine($"Debut de programme : {DateTime.Now}");
+            _logFile.WriteLine($"Ordinateur utilisé : {Environment.MachineName}");
             _logFile.WriteLine($"User : {Environment.UserName}\n");
             _logFile.WriteLine($"Fichier ouvert\n");
             _patient = patient;

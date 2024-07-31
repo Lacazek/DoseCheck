@@ -1,0 +1,14 @@
+ID Structure;Objectif,Limite,Referentiel
+rectum;D0%,76Gy,CHU
+rectum;D25%,70Gy,CHU
+rectum;D50%,60Gy,CHU
+vessie;D0%,80 Gy,CHU
+vessie;D25%,70Gy,CHU
+vessie;D50%,60Gy,CHU
+digestif;D0%,66Gy,CHU
+digestif;D200cc,40Gy,CHU
+digestif;D450cc,30Gy,CHU
+femur d ;D0%,55Gy,CHU
+femur d ;V50Gy,5%,CHU
+femur g ;D0%,55Gy,CHU
+femur g ;V50Gy,5%,CHU

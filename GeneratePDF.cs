@@ -1,20 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Shapes;
 using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 
@@ -35,12 +27,55 @@ namespace DoseCheck
             public bool Met { get; set; }
             public bool OverLimit { get; set; }
             public string FoundStructureID { get; set; }
-            public string Prescription { get; set; }
+            public string Referentiel { get; set; }
+            public string Vol { get; set; }
+
+        }
+        #region Extraction
+        public static double ExtractNumber(string input)
+        {
+            //Problème pour gérer le relatif (exemple PTV 95%)
+            Regex regexD = new Regex(@"(?i)^(D)?(?<evalpt>\d+(\.\d+)?)(?<unit>(Gy|cc|%))$");
+            Regex regexV = new Regex(@"(?i)^(V)?(?<evalpt>\d+(\.\d+)?)(?<unit>(Gy|cc|%))$");
+            Regex regexSimple = new Regex(@"(?i)(?<evalpt>^\d+(\.\d+)?)(?<unit>(%|cc|Gy))?$");
+
+            try
+            {
+                Match matchD = regexD.Match(input.Trim());
+                if (matchD.Success)
+                {
+                    return Convert.ToDouble(matchD.Groups["evalpt"].Value, CultureInfo.InvariantCulture);
+                }
+
+                Match matchV = regexV.Match(input.Trim());
+                if (matchV.Success)
+                {
+                    return Convert.ToDouble(matchV.Groups["evalpt"].Value, CultureInfo.InvariantCulture);
+                }
+
+                Match matchSimple = regexSimple.Match(input.Trim());
+                if (matchSimple.Success)
+                {
+                    return Convert.ToDouble(matchSimple.Groups["evalpt"].Value, CultureInfo.InvariantCulture);
+                }
+
+                return -1.00;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Aucun regex ne correspond pour {input}\n" + ex.Message);
+                return -1.00;
+            }
         }
 
-        static int CompareValues(double x, double y, double tol, string name)
+        static int CompareValues(double x, string obj, double tol, string name)
         {
-            if (name.Contains(@"(?i)\bt\s*v\s\b"))
+            if (obj.Trim().ToLower().Contains("index"))
+                obj = obj.Trim().Substring(0, 5);
+
+            double y = ExtractNumber(obj.Trim());
+
+            if (name.Contains("PTV") || name.Contains("CTV") || name.Contains("ITV") || name.Contains("GTV") && !name.ToUpper().Contains("z_"))
             {
                 if (x >= y) return -1;
                 if (x > y - tol && x < y) return 0;
@@ -51,9 +86,10 @@ namespace DoseCheck
                 if (x <= y + tol && x > y + tol) return 0;
 
             }
+            
             return 1; // x > y ou x tgt < y
         }
-
+        #endregion
 
         private Model _model;
         private Dictionary<string, string> _results;
@@ -61,7 +97,7 @@ namespace DoseCheck
         private string WORKBOOK_RESULT_DIR;
         private List<StructureObjective> m_objectives; //all the dose values are internally in Gy.
 
-
+        // Class pour assembler le fichier html avec les datas calculés dans GetMyData. Calcul également les informations nécessaire à ajouter au fichier final.
         internal GeneratePDF(Model model)
         {
             _results = new Dictionary<string, string>();
@@ -83,7 +119,7 @@ namespace DoseCheck
             {
                 MessageBox.Show("Erreur dans la construction du PDF\n" + ex.Message);
             }
-           
+
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         #region Execute
@@ -97,41 +133,67 @@ namespace DoseCheck
                 int _decimal = 2;
                 double tol = 1; // Gy
 
+                //foreach (var item in _results.Keys) { MessageBox.Show(item); }
+
                 try
                 {
+                    m_objectives = new List<StructureObjective>();
+
                     foreach (var item in _results)
                     {
-                        m_objectives = new List<StructureObjective>();
+                        if (!item.Key.Split('/')[2].Contains("Volume"))
                         {
                             StructureObjective obj = new StructureObjective();
                             {
-                                obj.ID = item.Key.Split('/')[0];
-                                obj.DVHObjective = item.Key.Split('/')[3];
-                                obj.ExpectedValue = item.Key.Split('/')[2];
-                                obj.RealValue = item.Value;
-                                switch (CompareValues(Convert.ToDouble(item.Value), Convert.ToDouble(item.Key.Split('/')[2]), tol, item.Key.Split('/')[0]))
+                                obj.Vol = _results.FirstOrDefault(x => x.Key.Split('/')[0] == item.Key.Split('/')[0] && x.Key.Contains("Volume")).Value;
+                                obj.Referentiel = item.Key.Split('/')[4];
+  
+                            if (item.Key.Split('/')[3].Trim().ToLower() != "no tol" && !item.Key.Split('/')[3].Trim().ToLower().Contains("index"))
                                 {
-                                    case -1: // x < y
-                                        obj.Met = true;
-                                        obj.Variation = false;
-                                        obj.OverLimit = false;
-                                        obj.Evaluator = "OK";
-                                        break;
-                                    case 0: // x <= y + tol et x > y
-                                        obj.Met = false;
-                                        obj.Variation = true;
-                                        obj.OverLimit = false;
-                                        obj.Evaluator = "Warning";
-                                        break;
-                                    case 1: // x > y + tol
-                                        obj.Met = false;
-                                        obj.Variation = false;
-                                        obj.OverLimit = true;
-                                        obj.Evaluator = "Over Limit";
-                                        break;
-                                    default:
-                                        throw new ArgumentException("Unexpected comparison result");
+                                    obj.ID = item.Key.Split('/')[0];
+                                    obj.DVHObjective = item.Key.Split('/')[3];
+                                    obj.ExpectedValue = item.Key.Split('/')[2];
+                                    obj.RealValue = item.Value;
+
+                                switch (CompareValues(Convert.ToDouble(item.Value.Substring(0, item.Value.Length-2).Trim()),
+                                        item.Key.Split('/')[3],
+                                        tol,
+                                        item.Key.Split('/')[0]))
+                                    {
+                                        case -1: // x < y
+                                            obj.Met = true;
+                                            obj.Variation = false;
+                                            obj.OverLimit = false;
+                                            obj.Evaluator = "OK";
+                                            break;
+                                        case 0: // x <= y + tol et x > y
+                                            obj.Met = false;
+                                            obj.Variation = true;
+                                            obj.OverLimit = false;
+                                            obj.Evaluator = "Warning";
+                                            break;
+                                        case 1: // x > y + tol
+                                            obj.Met = false;
+                                            obj.Variation = false;
+                                            obj.OverLimit = true;
+                                            obj.Evaluator = "Over Limit";
+                                            break;
+                                        default:
+                                            throw new ArgumentException("Unexpected comparison result");
+                                    }
                                 }
+                                else
+                                {
+                                    obj.ID = item.Key.Split('/')[0];
+                                    obj.DVHObjective = item.Key.Split('/')[3];
+                                    obj.ExpectedValue = item.Key.Split('/')[2];
+                                    obj.RealValue = item.Value;
+                                    obj.Met = false;
+                                    obj.Variation = false;
+                                    obj.OverLimit = false;
+                                    obj.Evaluator = "No Objectif";
+                                }
+                                m_objectives.Add(obj);
                             }
                         }
                     }
@@ -176,96 +238,148 @@ namespace DoseCheck
                 double[] Y2 = { 0, 0, 0, 0, 0, 0 };
                 int i = 0, y = 0;
 
-                foreach (var b in _model.PlanSetup.Beams)
+                try
                 {
-                    double XD = _model.Image.UserOrigin.x;
-                    double YD = _model.Image.UserOrigin.y;
-                    double ZD = _model.Image.UserOrigin.z;
-
-                    // COORDONNEES DICOM DU FAISCEAU + TAILLE DE CHAMP + UM
-                    if (b.Meterset.Value.ToString() == "Non Numérique") { }
-                    else
+                    foreach (var b in _model.PlanSetup.Beams)
                     {
-                        MessageBox.Show(Um.ToString());
-                        // ADDITION UM POUR CHAQUE FAISCEAU
-                        Um = b.Meterset.Value + Um;
-                        //VERIFICATION ET COMPARAISON POSITION MAX MACHOIRES DE CHAQUE FAISCEAU
-                        X1[i] = Math.Round(b.ControlPoints.First().JawPositions.X1 / 10, _decimal);
-                        X2[i] = Math.Round(b.ControlPoints.First().JawPositions.X2 / 10, _decimal);
-                        double xmaxi = (Math.Abs(X1[i] - X2[i]));
-                        if (xmaxi >= XMax) { XMax = xmaxi; }
-                        // POSITION DE CHAQUE FAISCEAU
-                        Xb = Math.Round(b.IsocenterPosition.x, _decimal);
-                        Yb = Math.Round(b.IsocenterPosition.y, _decimal);
-                        Zb = Math.Round(b.IsocenterPosition.z, _decimal);
-                        i++;
+                        double XD = _model.Image.UserOrigin.x;
+                        double YD = _model.Image.UserOrigin.y;
+                        double ZD = _model.Image.UserOrigin.z;
+
+                        // COORDONNEES DICOM DU FAISCEAU + TAILLE DE CHAMP + UM
+                        if (b.Meterset.Value.ToString() == "Non Numérique") { }
+                        else
+                        {
+
+                            //VERIFICATION ET COMPARAISON POSITION MAX MACHOIRES DE CHAQUE FAISCEAU
+                            X1[i] = Math.Round(b.ControlPoints.First().JawPositions.X1 / 10, _decimal);
+                            X2[i] = Math.Round(b.ControlPoints.First().JawPositions.X2 / 10, _decimal);
+                            double xmaxi = (Math.Abs(X1[i] - X2[i]));
+                            if (xmaxi >= XMax) { XMax = xmaxi; }
+                            // POSITION DE CHAQUE FAISCEAU
+                            Xb = Math.Round(b.IsocenterPosition.x, _decimal);
+                            Yb = Math.Round(b.IsocenterPosition.y, _decimal);
+                            Zb = Math.Round(b.IsocenterPosition.z, _decimal);
+                            // ADDITION UM POUR CHAQUE FAISCEAU
+                            Um += b.Meterset.Value;
+                            i++;
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Problème lors du chargement des faisceaux\n" + ex.Message);
+                }
+
                 string Iso = string.Format("X : {0} cm  Y : {2} cm  Z : {1} cm", Math.Abs(Math.Round((Xb - _model.Image.UserOrigin.x) / 10, _decimal)), Math.Abs(Math.Round((Yb - _model.Image.UserOrigin.y) / 10, _decimal)), Math.Abs(Math.Round((_model.Image.UserOrigin.z - Zb) / 10, _decimal)));
                 string[] InfoPlan = new string[] { _model.Patient.Name.ToString(), DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), _model.PlanSetup.Id.ToString(), _model.PlanSetup.Beams.First().TreatmentUnit.ToString(), _model.PlanSetup.CreationUserName.ToString() };
-                string[] EvalPlan = new string[] { _model.PlanSetup.Dose.DoseMax3D.ToString(), Math.Round(Um, _decimal).ToString(), Math.Round((Um / _model.PlanSetup.TotalDose.Dose * 100), _decimal).ToString(), XMax.ToString(), Iso };
-                string[] Prescription = new string[] { _model.PlanSetup.TotalDose.ToString(), _model.PlanSetup.DosePerFraction.ToString(), _model.PlanSetup.NumberOfFractions.ToString(), _model.PlanSetup.TargetVolumeID.ToString() };
-                string[] Header = new string[] { "ID Cible", "Volume cc" , "D95%", "D50%", "Dmax", "Dmean", "Dmoy", "Dmin" };
-                
-                string[] PTV_Name = new string[100], PTV_95s = new string[100], PTV_MAXs = new string[100];
-                double[] PTV_95 = new double[100], PTV_MAX = new double[100], TVpi = new double[100], Vptv = new double[100];
-                double[] R100 = new double[100], R50 = new double[100];
-                double[] PADDICK = new double[100], HI = new double[100], CI = new double[100] , GI = new double[100], RCI = new double[100];
-                string[,] PTVSTEREO = new string[100, 6], PTVSTEREOCalc = new string[100, 9];
+                string[] EvalPlan = new string[] { _model.PlanSetup.Dose.DoseMax3D.ToString(), Math.Round(Um, _decimal).ToString(), Math.Round(Um / (_model.PlanSetup.TotalDose.Dose * 100), _decimal).ToString(), XMax.ToString(), Iso, _model.PlanSetup.PlanNormalizationMethod.ToString() };
+                var PrescriptionList = new List<string[]>();
 
-                //Structure[] PTV_Structure=new structure [100];
-                Structure structu = null;
-
-                foreach (Structure scan in _model.StructureSet.Structures)
+                try
                 {
-                    //if (scan.Id.Contains(@"(?i)\bt\s*v\s\b") && scan.Id == _model.PlanSetup.TargetVolumeID)
-                    if (scan.Id.Contains("PTV") || scan.Id.Contains("CTV") || scan.Id.Contains("ITV") || scan.Id.Contains("GTV") && scan.Id == _model.PlanSetup.TargetVolumeID)
+                    foreach (var target in _model.PlanSetup.RTPrescription.Targets)
                     {
-                        PTV_Name[y] = _model.PlanSetup.TargetVolumeID.ToString();
-                        structu = scan;
-                        
-
-                        // Problème dans la calcul de la dose prescrite par cible
-                        double V100 = Math.Round(_model.PlanSetup.GetVolumeAtDose(structu, 100 * (DoseValue)(_model.RTPrescription.Targets.Where(x => x.Name == structu.Id).FirstOrDefault().DosePerFraction * _model.RTPrescription.NumberOfFractions), VolumePresentation.Relative),_decimal) ;
-                        double V95 = Math.Round(_model.PlanSetup.GetVolumeAtDose(structu, 95 * (DoseValue)(_model.RTPrescription.Targets.Where(x => x.Name == structu.Id).FirstOrDefault().DosePerFraction * _model.RTPrescription.NumberOfFractions), VolumePresentation.Relative),_decimal);                
-                        double V50 = Math.Round(_model.PlanSetup.GetVolumeAtDose(structu, 50 * (DoseValue)(_model.RTPrescription.Targets.Where(x => x.Name == structu.Id).FirstOrDefault().DosePerFraction * _model.RTPrescription.NumberOfFractions), VolumePresentation.Relative),_decimal);                      
-                        /*
-                        double V100 = Math.Round(_model.PlanSetup.GetVolumeAtDose(structu, new DoseValue(100 *_model.PlanSetup.TotalDose.Dose, DoseValue.DoseUnit.Gy), VolumePresentation.Relative), _decimal);
-                        double V95 = Math.Round(_model.PlanSetup.GetVolumeAtDose(structu, new DoseValue(95 * _model.PlanSetup.TotalDose.Dose, DoseValue.DoseUnit.Gy), VolumePresentation.Relative), _decimal);
-                        double V50 = Math.Round(_model.PlanSetup.GetVolumeAtDose(structu, new DoseValue(2 * _model.PlanSetup.TotalDose.Dose, DoseValue.DoseUnit.Gy), VolumePresentation.Relative), _decimal);  
-                        */
-                        double V0 = Convert.ToDouble(_results.Where(x => x.Key.Split(';')[0] == scan.Id).First().Value);
-                        //PTV_95[y] = _model.PlanSetup.GetVolumeAtDose(structu, new DoseValue( * _model.PlanSetup.TotalDose.Dose, DoseValue.DoseUnit.Gy), VolumePresentation.Relative);
-                        PTV_95[y] = V95;
-                        PTV_95s[y] = V95.ToString();
-                        PTV_MAX[y] = V0;
-                        PTV_MAXs[y] = V0.ToString();
-
-                        TVpi[y] = V95;
-                        Vptv[y] = Math.Round(structu.Volume, _decimal);
-
-                        R100[y] = V100 / Vptv[y];
-                        R50[y] = V50 / Vptv[y];
-
-                        HI[y] = Convert.ToDouble(_results.Where(x => x.Key.Split(';')[0] == scan.Id || x.Key.Split(';')[2] == "HI").First().Value);
-                        CI[y] = Convert.ToDouble(_results.Where(x => x.Key.Split(';')[0] == scan.Id || x.Key.Split(';')[2] == "CI").First().Value);
-                        RCI[y] = Convert.ToDouble(_results.Where(x => x.Key.Split(';')[0] == scan.Id || x.Key.Split(';')[2] == "RCI").First().Value);
-                        PADDICK[y] = Convert.ToDouble(_results.Where(x => x.Key.Split(';')[0] == scan.Id || x.Key.Split(';')[2] == "PADDICK").First().Value);
-                        GI[y] = Convert.ToDouble(_results.Where(x => x.Key.Split(';')[0] == scan.Id || x.Key.Split(';')[2] == "GI").First().Value);
-
-                        PTVSTEREO[y, 0] = PTV_Name[y];
-                        PTVSTEREO[y, 1] = scan.Volume.ToString();
-                        PTVSTEREO[y, 2] = PTV_95s[y];
-                        PTVSTEREO[y, 3] = PTV_MAXs[y];
-                        PTVSTEREO[y, 4] = Math.Round(HI[y], _decimal).ToString();
-                        PTVSTEREO[y, 5] = Math.Round(CI[y], _decimal).ToString();
-                        PTVSTEREO[y, 6] = Math.Round(CI[y], _decimal).ToString();
-                        PTVSTEREO[y, 7] = Math.Round(PADDICK[y], _decimal).ToString();
-                        PTVSTEREO[y, 8] = Math.Round(GI[y], _decimal).ToString();
+                        // Ajouter un tableau de chaînes contenant les informations de chaque cible à la liste
+                        PrescriptionList.Add(new string[]
+                        {
+        target.TargetId,
+        target.DosePerFraction.ToString(),
+        target.NumberOfFractions.ToString(),
+        Math.Round(target.NumberOfFractions * target.DosePerFraction.Dose,_decimal).ToString(),
+                        });
                     }
-                    y++;
                 }
-                string HtmlBody = ExportToHtml(Header, InfoPlan, Prescription, EvalPlan, PTVSTEREOCalc, PTVSTEREO);
+                catch
+                {
+
+                    PrescriptionList.Add(new string[]
+                {
+        _model.PlanSetup.TargetVolumeID ?? "No target",
+        _model.PlanSetup.DosePerFraction.ToString(),
+        _model.PlanSetup.NumberOfFractions.ToString(),
+        Math.Round((_model.PlanSetup.DosePerFraction.Dose * (int)_model.PlanSetup.NumberOfFractions),_decimal).ToString(),
+                });
+
+                }
+
+
+                string[][] Prescription = PrescriptionList.ToArray();
+                string[] Header = new string[] { "ID", "Volume [cc]", "D max [%]", "D99% [%]", "D95% [%]", "D90% [%]", "D moyenne [Gy]", "D m&#233diane [Gy]", "D min [Gy]", "Validation" };
+                string[] Header_OARs = new string[] { "ID", "Volume [cc]", "Objectif", "Contrainte", "R&#233sultats", "R&#233f&#233rentiel", "Validation" };
+                double PADDICK = -1, HI = -1, CI = -1, GI = -1, RCI = -1;
+                string[,] PTVSTEREO = new string[50, 10];
+                string[,] PTV = new string[50, 10];
+                double V100, V95, V50;
+                double D100, D50;
+                int NbFraction; DoseValue DosePerFraction;
+
+                try
+                {
+                    foreach (Structure scan in _model.StructureSet.Structures)
+                    {
+                        if (scan.Id.ToUpper().Contains("PTV") || scan.Id.ToUpper().Contains("CTV") || scan.Id.ToUpper().Contains("ITV") || scan.Id.ToUpper().Contains("GTV") && scan.Id == _model.PlanSetup.TargetVolumeID)
+                        {
+
+                            try
+                            {
+                                NbFraction = _model.RTPrescription.Targets.FirstOrDefault(x => x.TargetId == scan.Id).NumberOfFractions;
+                                DosePerFraction = _model.RTPrescription.Targets.FirstOrDefault(x => x.TargetId == scan.Id).DosePerFraction;
+                            }
+                            catch
+                            {
+                                NbFraction = (int)_model.PlanSetup.NumberOfFractions;
+                                DosePerFraction = _model.PlanSetup.DosePerFraction;
+                            }
+
+                            V100 = Math.Round(_model.PlanSetup.GetVolumeAtDose(scan, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal);
+                            V95 = Math.Round(_model.PlanSetup.GetVolumeAtDose(scan, 0.95 * (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal);
+                            V50 = Math.Round(_model.PlanSetup.GetVolumeAtDose(scan, 0.5 * (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal);
+                            D100 = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 100, VolumePresentation.Relative, DoseValuePresentation.Relative).Dose, _decimal);
+                            D50 = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 50, VolumePresentation.Relative, DoseValuePresentation.Relative).Dose, _decimal);
+
+                            try
+                            {
+                                HI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("HI")).Value);
+                                CI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("CI")).Value);
+                                RCI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("RCI")).Value);
+                                PADDICK = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("PADDICK")).Value);
+                                GI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("GI")).Value);
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Erreur lors de l'extraction des résultats : " + ex.Message);
+                            }
+                            PTVSTEREO[y, 0] = scan.Id;
+                            PTVSTEREO[y, 1] = Math.Round(scan.Volume, 2).ToString();
+                            PTVSTEREO[y, 2] = Math.Round(_model.PlanSetup.GetVolumeAtDose(_model.StructureSet.Structures.FirstOrDefault(x => x.DicomType.ToUpper() == "EXTERNAL"), (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
+                            PTVSTEREO[y, 3] = Math.Round(_model.PlanSetup.GetVolumeAtDose(scan, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
+                            PTVSTEREO[y, 4] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 100, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, _decimal).ToString();
+                            PTVSTEREO[y, 5] = Math.Round(HI, _decimal).ToString();
+                            PTVSTEREO[y, 6] = Math.Round(CI, _decimal).ToString();
+                            PTVSTEREO[y, 7] = Math.Round(RCI, _decimal).ToString();
+                            PTVSTEREO[y, 8] = Math.Round(PADDICK, _decimal).ToString();
+                            PTVSTEREO[y, 9] = Math.Round(GI, _decimal).ToString();
+
+                            PTV[y, 0] = scan.Id;
+                            PTV[y, 1] = Math.Round(scan.Volume, 2).ToString();
+                            PTV[y, 2] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 0.01, VolumePresentation.AbsoluteCm3, DoseValuePresentation.Relative).Dose, _decimal).ToString();
+                            PTV[y, 3] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 99, VolumePresentation.Relative, DoseValuePresentation.Relative).Dose, _decimal).ToString();
+                            PTV[y, 4] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 95, VolumePresentation.Relative, DoseValuePresentation.Relative).Dose, _decimal).ToString();
+                            PTV[y, 5] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 90, VolumePresentation.Relative, DoseValuePresentation.Relative).Dose, _decimal).ToString();
+                            PTV[y, 6] = Math.Round(_model.PlanSetup.GetDVHCumulativeData(scan, DoseValuePresentation.Absolute, VolumePresentation.Relative, 0.1).MeanDose.Dose, _decimal).ToString();
+                            PTV[y, 7] = Math.Round(_model.PlanSetup.GetDVHCumulativeData(scan, DoseValuePresentation.Absolute, VolumePresentation.Relative, 0.1).MedianDose.Dose, _decimal).ToString();
+                            PTV[y, 8] = Math.Round(_model.PlanSetup.GetDVHCumulativeData(scan, DoseValuePresentation.Absolute, VolumePresentation.Relative, 0.1).MinDose.Dose, _decimal).ToString();
+                        }
+                        y++;
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Problème lors du calcul des indices stéréotaxiques\n" + ex.Message);
+                }
+                string HtmlBody = ExportToHtml(Header, Header_OARs, InfoPlan, Prescription, EvalPlan, PTVSTEREO, PTV);
                 string outputpath = System.IO.Path.Combine(WORKBOOK_RESULT_DIR + DateTime.Now.ToString("yyyy-MM-dd") + "-" + _model.Patient.Name.ToString() + pitem.Id.ToString() + ".html");
 
                 System.IO.File.WriteAllText(outputpath, HtmlBody);
@@ -278,381 +392,8 @@ namespace DoseCheck
         ////////////////////////////////////////////////////////////// FIN EXECUTE ///////////////////////////////////////////////////
         #endregion
 
-        //convert the results data to something that can be HTML-ified
-
-        /*
-        #region ExportHTML
-        protected string ExportToHtml(string[] header, string[] InfoPlan, string[] Prescription, string[] EvaPlan, string[,] PTVSTEREOCalc, string[,] PTVSTEREO)
-        {
-
-            StringBuilder strHTMLBuilder = new StringBuilder();
-            strHTMLBuilder.Append("<html >");
-            strHTMLBuilder.Append("<head>");
-            strHTMLBuilder.Append("</head>");
-            strHTMLBuilder.Append("<body style='font-family:arial; font-size:medium'>");
-            strHTMLBuilder.Append("<br>");
-
-            strHTMLBuilder.Append("<div style='position:relative;'>");
-            strHTMLBuilder.Append("<img src='B:\\RADIOTHERAPIE\\Killian\\Dosi\\Script\\DoseCheck\\Projects\\DoseCheck\\fisherMan4.png' alt='Description de l'image' style='position:absolute; top:10; left:10; width:100px; height:auto;'>");
-            strHTMLBuilder.Append("</div>");
-
-            strHTMLBuilder.Append("<br>");
-
-            ////////////////////////////////////TABLEAU INFO PLAN  /////////////////////////////////////////////////////////////
-            //INIT EN-TETE
-
-            //color #FFD700
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FF95D1FF' align='center' WIDTH ='600' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerInfoPlan1 = new string[] { "INFORMATION DU DOSSIER" };
-
-            foreach (string myColumn3 in headerInfoPlan1)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FF95D1FF' align='center'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-            strHTMLBuilder.Append("</table>");
-            // FIN ENTETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' WIDTH ='600' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerInfoPlan2 = new string[] { "NOM, Pr&#233nom (ID) ", "Date", "Plan", "Machine de TTT", "Op&#233rateur" };
-
-            foreach (string myColumn3 in headerInfoPlan2)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FAFAD2' align='center'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-
-            foreach (string myColumn3 in InfoPlan)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-            }
-
-
-
-            strHTMLBuilder.Append("</table>");
-
-            ////////////////////////////////////FIN TABLEAU INFO PLAN /////////////////////////////////////////////////////////////
-            //	strHTMLBuilder.Append("<br>");
-
-
-
-            ////////////////////////////////////TABLEAU PRESRIPTION  /////////////////////////////////////////////////////////////
-            //INIT EN-TETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' WIDTH ='600' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerPrescription1 = new string[] { "PRESCRIPTION" };
-
-            foreach (string myColumn3 in headerPrescription1)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-            strHTMLBuilder.Append("</table>");
-            // FIN ENTETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' WIDTH ='600'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerPrescription2 = new string[] { "Dose totale (Gy)", "Dose/fr (Gy)", "Nfr", "Volume cible" };
-
-            foreach (string myColumn3 in headerPrescription2)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-
-
-            foreach (string myColumn3 in Prescription)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-            }
-
-            strHTMLBuilder.Append("</table>");
-
-            ////////////////////////////////////FIN TABLEAU PRESCRIPTION /////////////////////////////////////////////////////////////
-
-
-            ////////////////////////////////////TABLEAU Evaluation de plan  /////////////////////////////////////////////////////////////
-            //INIT EN-TETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' WIDTH ='600' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerEval1 = new string[] { "EVALUATION DU PLAN" };
-
-            foreach (string myColumn3 in headerEval1)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-            }
-            strHTMLBuilder.Append("</tr>");
-            strHTMLBuilder.Append("</table>");
-            // FIN ENTETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' WIDTH ='600'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerEval2 = new string[] { "Dmax", "UM", "Facteur de modulation", "Taille de champ max en X (cm)", "Iso Faisceaux (Beta)" };
-
-            foreach (string myColumn301 in headerEval2)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
-                strHTMLBuilder.Append(myColumn301);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-
-
-            foreach (string myColumn301 in EvaPlan)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
-                strHTMLBuilder.Append(myColumn301);
-                strHTMLBuilder.Append("</td>");
-            }
-
-            strHTMLBuilder.Append("</table>");
-
-            ////////////////////////////////////FIN TABLEAU Evaluation de plan /////////////////////////////////////////////////////////////
-
-            ////////////////////////////////////TABLEAU STEREOTAXIE  /////////////////////////////////////////////////////////////
-            //INIT EN-TETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' WIDTH ='600' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerPTVEVAL2 = new string[] { "CALCUL DES INDICES STEREOTAXIQUES" };
-
-            foreach (string myColumn3 in headerPTVEVAL2)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-            strHTMLBuilder.Append("</table>");
-            // FIN ENTETE    
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' WIDTH ='600'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-            string[] headerPTVEVAL3 = new string[] { "ID", "Volume [cc]", "V95%", "Dmax", "HI", "CI", "RCI", "Paddick", "GI" };
-            //string[] refCI = new string[] { "PTV", "[%]", "[%]", "[< 2.5]", "[0.7-1]", "[0.9-2.5]", "[0.7-1]", "[< 3]" };
-
-            try
-            {
-                foreach (string myColumn301 in headerPTVEVAL3)
-                {
-                    strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
-                    strHTMLBuilder.Append(myColumn301);
-                    strHTMLBuilder.Append("</td>");
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Problème sur la construction du tableau : Header PTV Eval \n" + ex.Message);
-            }
-            strHTMLBuilder.Append("</tr>");
-            
-            try
-            {
-                for (int PTVtabl = 0; PTVtabl < 100; PTVtabl++)
-                {
-                    if (PTVSTEREO[PTVtabl, 0] == null) { }
-                    else
-                    {
-                        string[] headerPTVinfo2 = new string[] { PTVSTEREO[PTVtabl, 0], PTVSTEREO[PTVtabl, 1], PTVSTEREO[PTVtabl, 2], PTVSTEREO[PTVtabl, 3], PTVSTEREO[PTVtabl, 4], PTVSTEREO[PTVtabl, 5], PTVSTEREO[PTVtabl, 6], PTVSTEREO[PTVtabl, 7], PTVSTEREO[PTVtabl, 8] };
-
-                        foreach (string myColumn301 in headerPTVinfo2)
-                        {
-                            strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
-                            strHTMLBuilder.Append(myColumn301);
-                            strHTMLBuilder.Append("</td>");
-
-                        }
-                        strHTMLBuilder.Append("</tr>");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Problème sur les PTV \n" + ex.Message);
-            }
-            strHTMLBuilder.Append("</table>");
-
-            ////////////////////////////////////FIN TABLEAU TABLEAU STEREOTAXIE  /////////////////////////////////////////////////////////////
-            ///
-
-            //////////////////////////////////////// TABLEAU CIBLES ///////////////////////////////////////////////////////////////////////
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' WIDTH ='600' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerPTVEVAL_PTV = new string[] { "Recap' : CIBLES" };
-
-            foreach (string myColumn3 in headerPTVEVAL_PTV)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-            strHTMLBuilder.Append("</table>");
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' WIDTH ='600'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-            try
-            {
-                foreach (string myColumn301 in header)
-                {
-                    strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
-                    strHTMLBuilder.Append(myColumn301);
-                    strHTMLBuilder.Append("</td>");
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Problème sur la construction du tableau : Header PTV Eval \n" + ex.Message);
-            }
-            strHTMLBuilder.Append("</tr>");
-           
-            try
-            {
-                for (int PTVtabl = 0; PTVtabl < 100; PTVtabl++)
-                {
-                    if (PTVSTEREO[PTVtabl, 0] == null) { }
-                    else
-                    {
-                        string[] headerPTVinfo2 = new string[] { PTVSTEREO[PTVtabl, 0], PTVSTEREO[PTVtabl, 1], PTVSTEREO[PTVtabl, 2], PTVSTEREO[PTVtabl, 3], PTVSTEREO[PTVtabl, 4], PTVSTEREO[PTVtabl, 5], PTVSTEREO[PTVtabl, 6], PTVSTEREO[PTVtabl, 7] };
-
-                        foreach (string myColumn301 in headerPTVinfo2)
-                        {
-                            strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
-                            strHTMLBuilder.Append(myColumn301);
-                            strHTMLBuilder.Append("</td>");
-
-                        }
-                        strHTMLBuilder.Append("</tr>");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Problème sur les PTV \n" + ex.Message);
-            }
-            strHTMLBuilder.Append("</table>");
-
-
-            //////////////////////////////////////// FIN TABLEAU CIBLES ///////////////////////////////////////////////////////////////////////
-
-
-            //////////////////////////////////////// TABLEAU 3 ///////////////////////////////////////////////////////////////////////
-            //INIT EN-TETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' WIDTH ='600' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-
-            string[] headerHDV = new string[] { "ANALYSE DES HDV : Cibles et OARs" };
-
-            foreach (string myColumn3 in headerHDV)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-            strHTMLBuilder.Append("</table>");
-            // FIN ENTETE
-
-            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#F8F8F8' align='center' WIDTH ='600'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
-            strHTMLBuilder.Append("<tr >");
-
-            foreach (string myColumn in header)
-            {
-                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
-                strHTMLBuilder.Append(myColumn);
-                strHTMLBuilder.Append("</td>");
-
-            }
-            strHTMLBuilder.Append("</tr>");
-
-            foreach (var obj in m_objectives)
-            {
-                MessageBox.Show("OK   KK");
-            }
-           
-            try
-            {
-                foreach (var obj in m_objectives)
-                {
-                    strHTMLBuilder.Append("<tr >");
-                    strHTMLBuilder.Append(obj.ID);
-                    strHTMLBuilder.Append(obj.ExpectedValue);
-                    strHTMLBuilder.Append(obj.DVHObjective);
-                    strHTMLBuilder.Append(obj.RealValue);
-
-                    string starttag = "";
-                    if (obj.Evaluator.ToString().Contains("Over Limit"))
-                    {
-                        starttag = "<td bgcolor='Red' align='center' style='font-family:arial; font-size:small;'>";
-                    }
-                    else if (obj.Evaluator.ToString().Contains("Warning"))
-                    {
-                        starttag = "<td bgcolor='Yellow' align='center' style='font-family:arial; font-size:small;'>";
-
-                    }
-                    else if (obj.Evaluator.ToString().Contains("OK"))
-                    {
-                        starttag = "<td bgcolor='LightGreen' align='center' style='font-family:arial; font-size:small;'>";
-                    }
-                    else
-                    {
-                        starttag = "<td style='font-family:arial align='center'; align='center' font-size:small;'>";
-                    }
-                    strHTMLBuilder.Append(starttag);
-                    //strHTMLBuilder.Append(myRow[myColumn.ColumnName].ToString());
-                    strHTMLBuilder.Append("</td>");
-
-                    strHTMLBuilder.Append("</tr>");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Problème sur les objets : Objectifs \n" + ex.Message);
-            }
-
-            ////////////////////////////////////FIN TABLEAU 2 /////////////////////////////////////////////////////////////      
-
-
-            //Close tags.  
-            strHTMLBuilder.Append("</table>");
-            strHTMLBuilder.Append("</body>");
-            strHTMLBuilder.Append("</html>");
-
-            string Htmltext = strHTMLBuilder.ToString();
-
-            return Htmltext;
-
-        }*/
-
         #region ExportToHtml
-        protected string ExportToHtml(string[] header, string[] InfoPlan, string[] Prescription, string[] EvaPlan, string[,] PTVSTEREOCalc, string[,] PTVSTEREO)
+        protected string ExportToHtml(string[] header, string[] header_OAR, string[] InfoPlan, string[][] Prescription, string[] EvaPlan, string[,] PTVSTEREO, string[,] PTV)
         {
             StringBuilder strHTMLBuilder = new StringBuilder();
             strHTMLBuilder.Append("<html>");
@@ -665,7 +406,7 @@ namespace DoseCheck
 
             // Ajouter une image en haut à gauche
             strHTMLBuilder.Append("<div style='margin-right: 20px;'>");
-            strHTMLBuilder.Append("<img src='B:\\RADIOTHERAPIE\\Killian\\Dosi\\Script\\DoseCheck\\Projects\\DoseCheck\\fisherMan4.png' alt='Description de l'image' style='width:100px; height:auto;'>");
+            strHTMLBuilder.Append("<img src='B:\\RADIOTHERAPIE\\Killian\\Dosi\\Script\\DoseCheck\\Projects\\DoseCheck\\fisherMan4.png' alt='Description de l'image' style='width:300px; height:auto;'>");
             strHTMLBuilder.Append("</div>");
 
             // Conteneur pour les tableaux
@@ -673,12 +414,12 @@ namespace DoseCheck
 
             //////////////////////////////////// TABLEAU INFO PLAN /////////////////////////////////////////////////////////////
             // INIT EN-TETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FF95D1FF' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#ADD8E6' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
             string[] headerInfoPlan1 = new string[] { "INFORMATION DU DOSSIER" };
             foreach (string myColumn3 in headerInfoPlan1)
             {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FF95D1FF' align='center'>");
+                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#ADD8E6' align='center'>");
                 strHTMLBuilder.Append(myColumn3);
                 strHTMLBuilder.Append("</td>");
             }
@@ -686,9 +427,9 @@ namespace DoseCheck
             strHTMLBuilder.Append("</table>");
 
             // FIN ENTETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
-            string[] headerInfoPlan2 = new string[] { "NOM, Prénom (ID) ", "Date", "Plan", "Machine de TTT", "Opérateur" };
+            string[] headerInfoPlan2 = new string[] { "NOM, Pr&#233nom (ID) ", "Date", "Plan", "Machine de traitement", "Op&#233rateur" };
             foreach (string myColumn3 in headerInfoPlan2)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FAFAD2' align='center'>");
@@ -710,12 +451,12 @@ namespace DoseCheck
 
             //////////////////////////////////// TABLEAU PRESCRIPTION /////////////////////////////////////////////////////////////
             // INIT EN-TETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#ADD8E6' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
             string[] headerPrescription1 = new string[] { "PRESCRIPTION" };
             foreach (string myColumn3 in headerPrescription1)
             {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
+                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#ADD8E6' align='center'>");
                 strHTMLBuilder.Append(myColumn3);
                 strHTMLBuilder.Append("</td>");
             }
@@ -723,9 +464,9 @@ namespace DoseCheck
             strHTMLBuilder.Append("</table>");
 
             // FIN ENTETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor=''#FAFAD2'' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
-            string[] headerPrescription2 = new string[] { "Dose totale (Gy)", "Dose/fr (Gy)", "Nfr", "Volume cible" };
+            string[] headerPrescription2 = new string[] { "Volume cible", "Dose/fr [Gy]", "Fractions", "Dose totale [Gy]" };
             foreach (string myColumn3 in headerPrescription2)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
@@ -734,11 +475,17 @@ namespace DoseCheck
             }
             strHTMLBuilder.Append("</tr>");
             strHTMLBuilder.Append("<tr>");
-            foreach (string myColumn3 in Prescription)
+
+            foreach (string[] myColumn3 in Prescription)
             {
-                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
-                strHTMLBuilder.Append(myColumn3);
-                strHTMLBuilder.Append("</td>");
+                strHTMLBuilder.Append("<tr>");
+                foreach (string myColumn4 in myColumn3)
+                {
+                    strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
+                    strHTMLBuilder.Append(myColumn4);
+                    strHTMLBuilder.Append("</td>");
+                }
+                strHTMLBuilder.Append("</tr>");
             }
             strHTMLBuilder.Append("</tr>");
             strHTMLBuilder.Append("</table>");
@@ -747,12 +494,12 @@ namespace DoseCheck
 
             //////////////////////////////////// TABLEAU Evaluation de plan /////////////////////////////////////////////////////////////
             // INIT EN-TETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#ADD8E6' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
             string[] headerEval1 = new string[] { "EVALUATION DU PLAN" };
             foreach (string myColumn3 in headerEval1)
             {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
+                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#ADD8E6' align='center'>");
                 strHTMLBuilder.Append(myColumn3);
                 strHTMLBuilder.Append("</td>");
             }
@@ -760,9 +507,9 @@ namespace DoseCheck
             strHTMLBuilder.Append("</table>");
 
             // FIN ENTETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
-            string[] headerEval2 = new string[] { "Dmax", "UM", "Facteur de modulation", "Taille de champ max en X (cm)", "Iso Faisceaux (Beta)" };
+            string[] headerEval2 = new string[] { "D max [%]", "UM [UM]", "Facteur de modulation [UM/cGy]", "Taille de champ max en X [cm]", "Iso Faisceaux (&#916)", "Normalisation" };
             foreach (string myColumn301 in headerEval2)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
@@ -784,12 +531,12 @@ namespace DoseCheck
 
             //////////////////////////////////// TABLEAU STEREOTAXIE /////////////////////////////////////////////////////////////
             // INIT EN-TETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FFD700' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#ADD8E6' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
             string[] headerPTVEVAL2 = new string[] { "CALCUL DES INDICES STEREOTAXIQUES" };
             foreach (string myColumn3 in headerPTVEVAL2)
             {
-                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FFD700' align='center'>");
+                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#ADD8E6' align='center'>");
                 strHTMLBuilder.Append(myColumn3);
                 strHTMLBuilder.Append("</td>");
             }
@@ -797,9 +544,9 @@ namespace DoseCheck
             strHTMLBuilder.Append("</table>");
 
             // FIN ENTETE
-            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='600' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
+            strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
-            string[] headerPTVEVAL3 = new string[] { "ID", "Volume [cc]", "V95%", "Dmax", "HI", "CI", "RCI", "Paddick", "GI" };
+            string[] headerPTVEVAL3 = new string[] { "ID", "Volume [cc]", "Vir [cc]", "VTir [cc]", "Isodose minimale [Gy]", "HI", "CI", "RCI", "Paddick", "GI" };
             foreach (string myColumn301 in headerPTVEVAL3)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
@@ -807,31 +554,204 @@ namespace DoseCheck
                 strHTMLBuilder.Append("</td>");
             }
             strHTMLBuilder.Append("</tr>");
+            strHTMLBuilder.Append("<tr>");
 
-            for (int i = 0; i <= PTVSTEREOCalc.GetUpperBound(0); i++)
+            string[] headerPTVEVAL4 = new string[] { string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, "[<2.5]", "[0.7-1]", "[0.9-2.5]", "[0.7-1]", "[<3]" };
+            foreach (string myColumn3 in headerPTVEVAL4)
+            {
+                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FAFAD2' align='center'>");
+                strHTMLBuilder.Append(myColumn3);
+                strHTMLBuilder.Append("</td>");
+            }
+            strHTMLBuilder.Append("</tr>");
+            strHTMLBuilder.Append("<tr");
+
+            for (int i = 0; i < PTVSTEREO.Length / 10; i++)
             {
                 strHTMLBuilder.Append("<tr>");
-                for (int j = 0; j <= PTVSTEREOCalc.GetUpperBound(1); j++)
+                for (int j = 0; j < 10; j++)
                 {
-                    strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
-                    strHTMLBuilder.Append(PTVSTEREOCalc[i, j]);
-                    strHTMLBuilder.Append("</td>");
+                    if (PTVSTEREO[i, 0] != null && !PTVSTEREO[i, 0].Contains("z_") && !PTVSTEREO[i, 0].Contains("z-"))
+                    {
+                        strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
+                        strHTMLBuilder.Append(PTVSTEREO[i, j]);
+                        strHTMLBuilder.Append("</td>");
+                    }
                 }
                 strHTMLBuilder.Append("</tr>");
             }
-            strHTMLBuilder.Append("</table>");
+
 
             //////////////////////////////////// FIN TABLEAU STEREOTAXIE /////////////////////////////////////////////////////////////
 
+            //////////////////////////////////////// TABLEAU CIBLES ///////////////////////////////////////////////////////////////////////
+
+            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#ADD8E6' align='center' WIDTH ='900' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
+            strHTMLBuilder.Append("<tr>");
+            string[] headerPTVEVAL_PTV = new string[] { "ANALYSE DES HDV : CIBLES" };
+
+            foreach (string myColumn3 in headerPTVEVAL_PTV)
+            {
+                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#ADD8E6' align='center'>");
+                strHTMLBuilder.Append(myColumn3);
+                strHTMLBuilder.Append("</td>");
+
+            }
+            strHTMLBuilder.Append("</tr>");
+            strHTMLBuilder.Append("</table>");
+
+            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' WIDTH ='900'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
+            strHTMLBuilder.Append("<tr>");
+            try
+            {
+                foreach (string myColumn301 in header)
+                {
+                    strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
+                    strHTMLBuilder.Append(myColumn301);
+                    strHTMLBuilder.Append("</td>");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Problème sur la construction du tableau : Header PTV Eval \n" + ex.Message);
+            }
+            strHTMLBuilder.Append("</tr>");
+            strHTMLBuilder.Append("</tr>");
+
+            //strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' WIDTH ='900'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
+            try
+            {
+                for (int PTVtabl = 0; PTVtabl < (PTV.Length / 10) - 1; PTVtabl++)
+                {
+                    if (PTVSTEREO[PTVtabl, 0] == null || PTVSTEREO[PTVtabl, 0].Contains("z_") || PTVSTEREO[PTVtabl, 0].Contains("z-")) { }
+                    else
+                    {
+                        string[] headerPTVinfo2 = new string[] { PTV[PTVtabl, 0], PTV[PTVtabl, 1], PTV[PTVtabl, 2], PTV[PTVtabl, 3], PTV[PTVtabl, 4], PTV[PTVtabl, 5], PTV[PTVtabl, 6], PTV[PTVtabl, 7], PTV[PTVtabl, 8], string.Empty };
+                        strHTMLBuilder.Append("</tr>");
+                        foreach (string myColumn301 in headerPTVinfo2)
+                        {
+                            strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#F8F8F8'>");
+                            strHTMLBuilder.Append(myColumn301);
+                            strHTMLBuilder.Append("</td>");
+
+                        }
+                        strHTMLBuilder.Append("</tr>");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Problème sur les cibles \n" + ex.Message);
+            }
+            strHTMLBuilder.Append("</tr>");
+
+            //////////////////////////////////////// FIN TABLEAU CIBLES ///////////////////////////////////////////////////////////////////////
+
+
+            //////////////////////////////////////// TABLEAU 3 ///////////////////////////////////////////////////////////////////////
+            //INIT EN-TETE
+
+            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#ADD8E6' align='center' WIDTH ='900' ;  style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
+            strHTMLBuilder.Append("<tr>");
+            string[] headerHDV = new string[] { "ANALYSE DES HDV : OARs" };
+
+            foreach (string myColumn3 in headerHDV)
+            {
+                strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#ADD8E6' align='center'>");
+                strHTMLBuilder.Append(myColumn3);
+                strHTMLBuilder.Append("</td>");
+
+            }
+            strHTMLBuilder.Append("</tr>");
+            strHTMLBuilder.Append("</table>");
+            // FIN ENTETE
+
+            strHTMLBuilder.Append("<table border='1px' cellpadding='1' cellspacing='0' bgcolor='#F8F8F8' align='center' WIDTH ='900'; style='border:dotted 1px Silver; font-family:arial; font-size:small'>");
+            strHTMLBuilder.Append("<tr >");
+
+            foreach (string myColumn in header_OAR)
+            {
+                strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
+                strHTMLBuilder.Append(myColumn);
+                strHTMLBuilder.Append("</td>");
+
+            }
+            strHTMLBuilder.Append("</tr>");
+
+            try
+            {
+                foreach (var obj in m_objectives)
+                {
+                    if (!(obj.ID.Contains("PTV") || obj.ID.Contains("CTV") || obj.ID.Contains("ITV") || obj.ID.Contains("GTV")))
+                    {
+                        if (!(obj.ExpectedValue.Contains("Min")) && !(obj.ExpectedValue.Contains("Median")))
+                        {
+                            strHTMLBuilder.Append("<tr >");
+                            strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#F8F8F8' align='center'>");
+                            strHTMLBuilder.Append(obj.ID);
+                            strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#F8F8F8' align='center'>");
+                            strHTMLBuilder.Append(obj.Vol);
+                            strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#F8F8F8' align='center'>");
+                            strHTMLBuilder.Append(obj.ExpectedValue);
+                            strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#F8F8F8' align='center'>");
+                            strHTMLBuilder.Append(obj.DVHObjective);
+
+                            string starttag = "";
+                            if (obj.Evaluator.ToString().Contains("Over Limit"))
+                            {
+                                starttag = "<td bgcolor='Red' align='center' style='font-family:arial; font-size:small;'>";
+                            }
+                            else if (obj.Evaluator.ToString().Contains("Warning"))
+                            {
+                                starttag = "<td bgcolor='Yellow' align='center' style='font-family:arial; font-size:small;'>";
+                            }
+                            else if (obj.Evaluator.ToString().Contains("OK"))
+                            {
+                                starttag = "<td bgcolor='LightGreen' align='center' style='font-family:arial; font-size:small;'>";
+                            }
+                            else
+                            {
+                                starttag = "<td style='font-family:arial align='center'; align='center' font-size:small;'>";
+                            }
+
+                            strHTMLBuilder.Append(starttag);
+                            strHTMLBuilder.Append(obj.RealValue);
+                            strHTMLBuilder.Append("</td>");
+
+                            strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#F8F8F8' align='center'>");
+                            strHTMLBuilder.Append(obj.Referentiel);
+                            strHTMLBuilder.Append("</td>");
+
+                            strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#F8F8F8' align='center'>");
+                            strHTMLBuilder.Append(string.Empty);
+
+                            strHTMLBuilder.Append("</td>");
+                            strHTMLBuilder.Append("</tr>");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Problème sur les objets : Objectifs \n" + ex.Message);
+            }
+            strHTMLBuilder.Append("</tr>");
+            strHTMLBuilder.Append("</table>");
+
+            ////////////////////////////////////FIN TABLEAU 2 /////////////////////////////////////////////////////////////      
             strHTMLBuilder.Append("</div>"); // Fin conteneur tableaux
             strHTMLBuilder.Append("</div>"); // Fin conteneur flex
 
             strHTMLBuilder.Append("</body>");
             strHTMLBuilder.Append("</html>");
 
-            return strHTMLBuilder.ToString();
+            string Htmltext = strHTMLBuilder.ToString();
+
+            return Htmltext;
+
         }
-#endregion
+        #endregion
     }
 }
 

@@ -1,0 +1,6 @@
+ID Structure,Objectif,Limite,Resultat,Etat,,
+Coeur,V18Gy[%],<=25,,-,CHU,
+Coeur,D30[Gy],<=59,,-,CHU,
+Thyroide,D30[Gy],<=59,,-,CHU,
+Thyroide,D20[Gy],<=59,,-,CHU,
+Thyroide,D10[Gy],<=59,,-,CHU,
