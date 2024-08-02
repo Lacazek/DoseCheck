@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
+using System.Windows.Input;
 using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 
@@ -135,6 +136,7 @@ namespace DoseCheck
 
                 //foreach (var item in _results.Keys) { MessageBox.Show(item); }
 
+                // Permet de créer la list d'objet qui va alimenter le tableau HDV OAR du fichier html
                 try
                 {
                     m_objectives = new List<StructureObjective>();
@@ -182,6 +184,27 @@ namespace DoseCheck
                                             throw new ArgumentException("Unexpected comparison result");
                                     }
                                 }
+                            else if (item.Key.Split('/')[3].Trim().ToLower().Contains( "dose max") || item.Key.Split('/')[3].Trim().ToLower().Contains("dose moyenne"))
+                                {
+                                    obj.ID = item.Key.Split('/')[0];
+                                    obj.DVHObjective = item.Key.Split('/')[3];
+                                    obj.ExpectedValue = item.Key.Split('/')[2];
+                                    obj.RealValue = item.Value;
+                                    obj.Variation = false;
+
+                                    if (Convert.ToDouble(obj.RealValue) < Convert.ToDouble(obj.DVHObjective))
+                                    {
+                                        obj.Met = true;
+                                        obj.OverLimit = false;
+                                        obj.Evaluator = "OK";
+                                    }
+                                    else
+                                    {
+                                        obj.Met = false;
+                                        obj.OverLimit = true;
+                                        obj.Evaluator = "Over Limit";
+                                    }
+                                }
                                 else
                                 {
                                     obj.ID = item.Key.Split('/')[0];
@@ -205,8 +228,7 @@ namespace DoseCheck
 
                 try
                 {
-                    // if a plansum is loaded take the first plansum to work on, otherwise take the active plansetup.
-
+                    // Test les sommes de plan
                     if (_model.PlanSetup == null && _model.Course.PlanSums == null)
                     { throw new ApplicationException("Please load a plan or plansum."); }
                     if (_model.PlanSetup == null && _model.Course.PlanSums.Count() > 1)
@@ -231,6 +253,8 @@ namespace DoseCheck
                     MessageBox.Show("Problème lors du chargement du plan\n" + ex.Message); // erreur ici aussi
                 }
 
+
+                // Calcul des paramètres de faisceau utilisés pour le fichier html uniquement (ne concerne pas la partie dose)
                 double Um = 0, Xb = 0, Yb = 0, Zb = 0, XMax = 0;
                 double[] X1 = { 0, 0, 0, 0, 0, 0 };
                 double[] Y1 = { 0, 0, 0, 0, 0, 0 };
@@ -273,7 +297,7 @@ namespace DoseCheck
 
                 string Iso = string.Format("X : {0} cm  Y : {2} cm  Z : {1} cm", Math.Abs(Math.Round((Xb - _model.Image.UserOrigin.x) / 10, _decimal)), Math.Abs(Math.Round((Yb - _model.Image.UserOrigin.y) / 10, _decimal)), Math.Abs(Math.Round((_model.Image.UserOrigin.z - Zb) / 10, _decimal)));
                 string[] InfoPlan = new string[] { _model.Patient.Name.ToString(), DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), _model.PlanSetup.Id.ToString(), _model.PlanSetup.Beams.First().TreatmentUnit.ToString(), _model.PlanSetup.CreationUserName.ToString() };
-                string[] EvalPlan = new string[] { _model.PlanSetup.Dose.DoseMax3D.ToString(), Math.Round(Um, _decimal).ToString(), Math.Round(Um / (_model.PlanSetup.TotalDose.Dose * 100), _decimal).ToString(), XMax.ToString(), Iso, _model.PlanSetup.PlanNormalizationMethod.ToString() };
+                string[] EvalPlan = new string[] { _model.PlanSetup.TargetVolumeID.ToString(),_model.PlanSetup.Dose.DoseMax3D.ToString(), Math.Round(Um, _decimal).ToString(), Math.Round(Um / (_model.PlanSetup.TotalDose.Dose * 100), _decimal).ToString(), XMax.ToString(), Iso, _model.PlanSetup.PlanNormalizationMethod.ToString() };
                 var PrescriptionList = new List<string[]>();
 
                 try
@@ -292,7 +316,6 @@ namespace DoseCheck
                 }
                 catch
                 {
-
                     PrescriptionList.Add(new string[]
                 {
         _model.PlanSetup.TargetVolumeID ?? "No target",
@@ -308,19 +331,19 @@ namespace DoseCheck
                 string[] Header = new string[] { "ID", "Volume [cc]", "D max [%]", "D99% [%]", "D95% [%]", "D90% [%]", "D moyenne [Gy]", "D m&#233diane [Gy]", "D min [Gy]", "Validation" };
                 string[] Header_OARs = new string[] { "ID", "Volume [cc]", "Objectif", "Contrainte", "R&#233sultats", "R&#233f&#233rentiel", "Validation" };
                 double PADDICK = -1, HI = -1, CI = -1, GI = -1, RCI = -1;
-                string[,] PTVSTEREO = new string[50, 10];
-                string[,] PTV = new string[50, 10];
+                string[,] PTVSTEREO = new string[150, 10];
+                string[,] PTV = new string[150, 10];
                 double V100, V95, V50;
                 double D100, D50;
                 int NbFraction; DoseValue DosePerFraction;
 
+                // Mise en forme des données pour le fichier html
                 try
                 {
                     foreach (Structure scan in _model.StructureSet.Structures)
                     {
                         if (scan.Id.ToUpper().Contains("PTV") || scan.Id.ToUpper().Contains("CTV") || scan.Id.ToUpper().Contains("ITV") || scan.Id.ToUpper().Contains("GTV") && scan.Id == _model.PlanSetup.TargetVolumeID)
                         {
-
                             try
                             {
                                 NbFraction = _model.RTPrescription.Targets.FirstOrDefault(x => x.TargetId == scan.Id).NumberOfFractions;
@@ -355,11 +378,11 @@ namespace DoseCheck
                             PTVSTEREO[y, 2] = Math.Round(_model.PlanSetup.GetVolumeAtDose(_model.StructureSet.Structures.FirstOrDefault(x => x.DicomType.ToUpper() == "EXTERNAL"), (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
                             PTVSTEREO[y, 3] = Math.Round(_model.PlanSetup.GetVolumeAtDose(scan, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
                             PTVSTEREO[y, 4] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 100, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, _decimal).ToString();
-                            PTVSTEREO[y, 5] = Math.Round(HI, _decimal).ToString();
-                            PTVSTEREO[y, 6] = Math.Round(CI, _decimal).ToString();
-                            PTVSTEREO[y, 7] = Math.Round(RCI, _decimal).ToString();
-                            PTVSTEREO[y, 8] = Math.Round(PADDICK, _decimal).ToString();
-                            PTVSTEREO[y, 9] = Math.Round(GI, _decimal).ToString();
+                            PTVSTEREO[y, 5] = HI.ToString();
+                            PTVSTEREO[y, 6] = CI.ToString();
+                            PTVSTEREO[y, 7] = RCI.ToString();
+                            PTVSTEREO[y, 8] = PADDICK.ToString();
+                            PTVSTEREO[y, 9] = GI.ToString();
 
                             PTV[y, 0] = scan.Id;
                             PTV[y, 1] = Math.Round(scan.Volume, 2).ToString();
@@ -393,6 +416,7 @@ namespace DoseCheck
         #endregion
 
         #region ExportToHtml
+        // Création et mise en forme du fichier html
         protected string ExportToHtml(string[] header, string[] header_OAR, string[] InfoPlan, string[][] Prescription, string[] EvaPlan, string[,] PTVSTEREO, string[,] PTV)
         {
             StringBuilder strHTMLBuilder = new StringBuilder();
@@ -509,7 +533,7 @@ namespace DoseCheck
             // FIN ENTETE
             strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
-            string[] headerEval2 = new string[] { "D max [%]", "UM [UM]", "Facteur de modulation [UM/cGy]", "Taille de champ max en X [cm]", "Iso Faisceaux (&#916)", "Normalisation" };
+            string[] headerEval2 = new string[] { "Volume de normalisation","D max [%]", "UM [UM]", "Facteur de modulation [UM/cGy]", "Taille de champ max en X [cm]", "Iso Faisceaux (&#916)", "Normalisation" };
             foreach (string myColumn301 in headerEval2)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
