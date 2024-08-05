@@ -106,7 +106,6 @@ namespace DoseCheck
                             {
                                 _streamWriter.WriteLine(OAR.OrganAtRiskId + ";" + constraint.Value1 + constraint.Unit1 + "," + constraint.Value2 + constraint.Unit2 + "," + "Prescription  num&#233rique");
                                 addNLines++;
-
                             }
                         }
                     }
@@ -206,7 +205,7 @@ namespace DoseCheck
                 catch (Exception ex)
                 {
 
-                    MessageBox.Show("Erreur sur le calcul des doses\n" + ex.Message);
+                    MessageBox.Show($"Erreur sur le calcul des doses : La structure {st.Id} a été trouvé à la place de {line.Split(';')[0]} \n" + ex.Message);
                 }
 
                 // Calcul de la partie VxxGy, Vxx%, Dxxcc, Dxx%
@@ -245,7 +244,7 @@ namespace DoseCheck
                         //if (unit.Value == "cc")
                         if (line.Split(';')[1].Split(',')[1].Substring(line.Split(';')[1].Split(',')[1].Length - 2) == "cc")
                         {
-                            _results.Add(_s + " / " + (line.Split(';')[1]).Split(',')[0] + "/" + (line.Split(';')[1]).Split(',')[1] + "/ " + referentiel, Math.Round(myPlan.GetVolumeAtDose(st, myRequestedDose.Dose * NbFraction * DosePerFraction / 100, VolumePresentation.AbsoluteCm3), 2).ToString() + " cc");
+                            _results.Add(_s + " / " + (line.Split(';')[1]).Split(',')[0] + "/" + (line.Split(';')[1]).Split(',')[1] + "/ " + referentiel, Math.Round(myPlan.GetVolumeAtDose(st, myRequestedDose, VolumePresentation.AbsoluteCm3), 2).ToString() + " cc");
                             // Deux parties : la clé au format [ organe / indice / valeur recherchée / objectif / référentiel] et le résultats au format [ résultat unité]
                         }
                         else if (unit.Value == "%")
