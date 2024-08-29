@@ -34,6 +34,8 @@ namespace DoseCheck
         private GeneratePDF _generatePDF;
         private CreateExcelForStats _createExcelForStats;
         private Dictionary<string, string> _results;
+        private Dictionary<string, string> _index;
+        private PairOrgan _pairOrgan;
 
 
         internal GetMyData(Model _m)
@@ -42,7 +44,9 @@ namespace DoseCheck
             _model = _m;
             _generatePDF = new GeneratePDF(_model);
             _results = new Dictionary<string, string>();
+            _index = new Dictionary<string, string>();
             _createExcelForStats = new CreateExcelForStats(_model);
+            _pairOrgan = new PairOrgan();
         }
 
         public void MyData()
@@ -57,6 +61,8 @@ namespace DoseCheck
             string d_at_v_pattern = @"^D(?<evalpt>\d+\p{P}\d+|\d+)(?<unit>(%|cc))$"; // matches D95%, D2cc
             string v_at_d_pattern = @"^V(?<evalpt>\d+\p{P}\d+|\d+)(?<unit>(%|cc|Gy))$"; // matches V50.4% or V50.4Gy 
             int lastLineNumber = File.ReadLines(_userFile).Count();
+            bool _token = true;
+
 
             #region Modification du fichier template
             // Permet d'ajouter dans le fichier texte les contraintes spécifiques de la prescription 
@@ -71,40 +77,66 @@ namespace DoseCheck
                     {
                         if (!constraint.Value1.Length.Equals(0))
                         {
-                            _streamWriter.WriteLine(index.TargetId + ";" + constraint.Value1 + constraint.Unit1 + "," + constraint.Value2 + constraint.Unit2 + "," + "Prescription  num&#233rique");
+                            _streamWriter.WriteLine(index.TargetId + ";" + constraint.Value1 + constraint.Unit1 + "," + constraint.Value2 + constraint.Unit2 + "," + "Prescription_num&#233rique");
                             addNLines++;
                         }
                     }
                 }
+                string pairstruct = string.Empty;
                 foreach (var OAR in _model.RTPrescription.OrgansAtRisk)
                 {
-                    bool _alreadyDone = false;
                     foreach (var constraint in OAR.Constraints)
                     {
                         if (!constraint.Value1.Length.Equals(0))
                         {
                             if (string.IsNullOrEmpty(constraint.Value2))
                             {
-                                if (!_alreadyDone)
+                                if (!constraint.ConstraintType.ToString().ToLower().Contains("mean"))
                                 {
-                                    _streamWriter.WriteLine(OAR.OrganAtRiskId + "; Dose max ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription  num&#233rique");
-                                    addNLines++;
-                                    _streamWriter.WriteLine(OAR.OrganAtRiskId + "; Dose moyenne ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription  num&#233rique");
-                                    addNLines++;
-                                    _alreadyDone = true;
+                                    if (_pairOrgan.GetOrgan.ContainsKey(OAR.OrganAtRiskId.ToLower()))
+                                    {
+                                        pairstruct =
+                                            (OAR.OrganAtRiskId.ToLower().Contains("@\"(?i)\\bpoumon\\s(homolateral|homolatéral)\\b\"")) ? "homolateral" :
+                                            (OAR.OrganAtRiskId.ToLower().Contains("@\"(?i)\\bpoumon\\s(controlateral|controlatéral)\\b\"")) ? "controlateral" :
+                                            OAR.OrganAtRiskId.ToLower();
+
+                                        _streamWriter.WriteLine(_pairOrgan.GetOrgan[pairstruct].Item1 + "; Dose max ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription_num&#233rique");
+                                        addNLines++;
+                                        _streamWriter.WriteLine(_pairOrgan.GetOrgan[pairstruct].Item2 + "; Dose max ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription_num&#233rique");
+                                        addNLines++;
+                                    }
+                                    else
+                                    {
+                                        _streamWriter.WriteLine(OAR.OrganAtRiskId + "; Dose max ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription_num&#233rique");
+                                        addNLines++;
+                                    }
                                 }
-                               /* if (!_alreadyDone)
+                                else
                                 {
-                                    _streamWriter.WriteLine(OAR.OrganAtRiskId + "; " + constraint.ConstraintType.ToString() + " ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription  num&#233rique");
-                                    addNLines++;
-                                    _streamWriter.WriteLine(OAR.OrganAtRiskId + "; " + constraint.ConstraintType.ToString() + " ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription  num&#233rique");
-                                    addNLines++;
-                                    _alreadyDone = true;
-                                }*/
+                                    pairstruct =
+                                        (OAR.OrganAtRiskId.ToLower().Contains("@\"(?i)\\bpoumon\\s(homolateral|homolatéral)\\b\"")) ? "homolateral" :
+                                        (OAR.OrganAtRiskId.ToLower().Contains("@\"(?i)\\bpoumon\\s(controlateral|controlatéral)\\b\"")) ? "controlateral" :
+                                        OAR.OrganAtRiskId.ToLower();
+
+                                    if (_pairOrgan.GetOrgan.ContainsKey(OAR.OrganAtRiskId.ToLower()))
+                                    {
+                                        _streamWriter.WriteLine(_pairOrgan.GetOrgan[pairstruct].Item1 + "; Dose moyenne ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription_num&#233rique");
+                                        addNLines++;
+                                        _streamWriter.WriteLine(_pairOrgan.GetOrgan[pairstruct].Item2 + "; Dose moyenne ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription_num&#233rique");
+                                        addNLines++;
+                                    }
+                                    else
+                                    {
+                                        _streamWriter.WriteLine(OAR.OrganAtRiskId + "; Dose moyenne ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription_num&#233rique");
+                                        addNLines++;
+                                    }
+
+
+                                }
                             }
                             else
                             {
-                                _streamWriter.WriteLine(OAR.OrganAtRiskId + ";" + constraint.Value1 + constraint.Unit1 + "," + constraint.Value2 + constraint.Unit2 + "," + "Prescription  num&#233rique");
+                                _streamWriter.WriteLine(OAR.OrganAtRiskId + ";" + constraint.Value1 + constraint.Unit1 + "," + constraint.Value2 + constraint.Unit2 + "," + "Prescription_num&#233rique");
                                 addNLines++;
                             }
                         }
@@ -126,7 +158,6 @@ namespace DoseCheck
 
             while ((line = _streamReader.ReadLine()) != null)
             {
-
                 line = line.Replace(" ", "");
                 var testMatchD_at_V = Regex.Matches((line.Split(';')[1]).Split(',')[0], d_at_v_pattern);
                 var testMatchV_at_D = Regex.Matches((line.Split(';')[1]).Split(',')[0], v_at_d_pattern);
@@ -182,24 +213,26 @@ namespace DoseCheck
                 }
 
                 DVHData myDVH = myPlan.GetDVHCumulativeData(st, DoseValuePresentation.Absolute, VolumePresentation.Relative, 0.1);
-
                 // Permet d'ajouter une fois à chaque structure la dose max,moyenne médiane et min
                 // Permet de vérifier les doses moyennes et max en fonction de la prescription
                 try
                 {
                     if (!_results.Keys.Any(x => x.ToLower().Contains(_s.Split('/')[0].ToLower())))
                     {
-                        _results.Add(_s + " / Max Dose / no tol / " + referentiel, Math.Round(myDVH.MaxDose.Dose, 2).ToString() + " Gy");
-                        _results.Add(_s + " / Mean Dose / no tol /" + referentiel, Math.Round(myDVH.MeanDose.Dose, 2).ToString() + " Gy");
-                        _results.Add(_s + " / Median Dose / no tol /" + referentiel, Math.Round(myDVH.MedianDose.Dose, 2).ToString() + " Gy");
-                        _results.Add(_s + " / Min Dose / no tol /" + referentiel, Math.Round(myDVH.MinDose.Dose, 2).ToString() + " Gy");
-                        _results.Add(_s + " / Volume / no tol /" + referentiel, Math.Round(st.Volume, 2).ToString() + " cc");
+                        _results.Add(_s + " / Max Dose / no tol / CHU", Math.Round(myDVH.MaxDose.Dose, 2).ToString() + " Gy");
+                        _results.Add(_s + " / Mean Dose / no tol / CHU", Math.Round(myDVH.MeanDose.Dose, 2).ToString() + " Gy");
+                        _results.Add(_s + " / Median Dose / no tol / CHU", Math.Round(myDVH.MedianDose.Dose, 2).ToString() + " Gy");
+                        _results.Add(_s + " / Min Dose / no tol / CHU", Math.Round(myDVH.MinDose.Dose, 2).ToString() + " Gy");
+                        _results.Add(_s + " / Volume / no tol / CHU", Math.Round(st.Volume, 2).ToString() + " cc");
                         // Deux parties : la clé au format [ organe / indice / valeur recherchée / objectif / référentiel] et le résultats au format [ résultat unité]
                     }
-                    else if (line.Split(';')[1].Split(',')[0].Trim().ToLower().Contains("dosemax") || line.Split(';')[1].Split(',')[0].Trim().ToLower().Contains("dosemoyenne"))
+                    if (line.Split(';')[1].Split(',')[0].Trim().ToLower().Contains("dosemax"))
                     {
-                            _results.Add(_s + " / Max Dose / " + (line.Split(';')[1]).Split(',')[1] + " /" + referentiel, Math.Round(myDVH.MaxDose.Dose, 2).ToString() + " Gy");
-                            _results.Add(_s + " / Mean Dose / " + (line.Split(';')[1]).Split(',')[1] + " /" + referentiel, Math.Round(myDVH.MeanDose.Dose, 2).ToString() + " Gy");
+                        _results.Add(_s + " / Max Dose / " + (line.Split(';')[1]).Split(',')[1] + " /" + referentiel, Math.Round(myDVH.MaxDose.Dose, 2).ToString() + " Gy");
+                    }
+                    if (line.Split(';')[1].Split(',')[0].Trim().ToLower().Contains("dosemoyenne"))
+                    {
+                        _results.Add(_s + " / Mean Dose / " + (line.Split(';')[1]).Split(',')[1] + " /" + referentiel, Math.Round(myDVH.MeanDose.Dose, 2).ToString() + " Gy");
                     }
                 }
                 catch (Exception ex)
@@ -264,73 +297,75 @@ namespace DoseCheck
                 }
                 #endregion
 
-                #region Indice
-                // Calcul des indices de stéréotaxie
-                try
+                #region Indice  
+                if (_token)
                 {
-                    if (st.Id.Contains("PTV") || st.Id.Contains("CTV") || st.Id.Contains("ITV") || st.Id.Contains("GTV") && st.Id == _model.PlanSetup.TargetVolumeID && !st.Id.ToUpper().Contains("z_") && !_results.Keys.Any(x => x.Contains(st.Id)))
+                    foreach (var _target in myPlan.StructureSet.Structures)
                     {
-                        if (!_results.Keys.Contains(_s))
+                        // Calcul des indices de stéréotaxie
+                        try
                         {
-                            try
+                            if (_target.Id.ToUpper().Contains("PTV") || _target.Id.ToUpper().Contains("CTV") || _target.Id.ToUpper().Contains("ITV") || _target.Id.ToUpper().Contains("GTV") && !st.Id.ToUpper().Contains("z_") && !_results.Keys.Any(x => x.Contains(st.Id)))
                             {
-                                _results.Add(_s + "/ V107% / 107% / " + referentiel, Math.Round(myPlan.GetVolumeAtDose(st, 1.07 * (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), 2).ToString() + " cc");
-                                _results.Add(_s + "/ D95% / 95% / " + referentiel, Math.Round(myPlan.GetDoseAtVolume(st, 0.95 * (DosePerFraction.Dose * NbFraction), VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, 2).ToString() + " Gy");
-                                _results.Add(_s + "/ V95% / 95% / " + referentiel, Math.Round(myPlan.GetVolumeAtDose(st, 0.95 * (DosePerFraction * NbFraction), VolumePresentation.Relative), 2).ToString() + " %");
-                                _results.Add(_s + "/ D50% / 50% / " + referentiel, Math.Round(myPlan.GetDoseAtVolume(st, 0.50 * (DosePerFraction.Dose * NbFraction), VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, 2).ToString() + " Gy");
+                                _index.Add(_s + "/ V107% " + _target.Id + "  / 107% / " + referentiel, Math.Round(myPlan.GetVolumeAtDose(_target, 1.07 * (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), 2).ToString() + " cc");
+                                _index.Add(_s + "/ D95%  " + _target.Id + " / 95% / " + referentiel, Math.Round(myPlan.GetDoseAtVolume(_target, 0.95 * (DosePerFraction.Dose * NbFraction), VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, 2).ToString() + " Gy");
+                                _index.Add(_s + "/ V95%  " + _target.Id + " / 95% / " + referentiel, Math.Round(myPlan.GetVolumeAtDose(_target, 0.95 * (DosePerFraction * NbFraction), VolumePresentation.Relative), 2).ToString() + " %");
+                                _index.Add(_s + "/ D50%  " + _target.Id + " / 50% / " + referentiel, Math.Round(myPlan.GetDoseAtVolume(_target, 0.50 * (DosePerFraction.Dose * NbFraction), VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, 2).ToString() + " Gy");
 
                                 #region HomogenityIndex
-                                double d02 = myPlan.GetDoseAtVolume(st, 2, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
-                                double d98 = myPlan.GetDoseAtVolume(st, 98, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
-                                double d50 = myPlan.GetDoseAtVolume(st, 50, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
-                                _results.Add(_s + "/ HI / index <2.5 / " + referentiel, (Math.Round((d02 - d98) / d50, 3)).ToString());
+                                double d02 = myPlan.GetDoseAtVolume(_target, 2, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
+                                double d98 = myPlan.GetDoseAtVolume(_target, 98, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
+                                double d50 = myPlan.GetDoseAtVolume(_target, 50, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
+                                _index.Add(_s + "/ HI " + _target.Id + " / index <2.5 / " + referentiel, (Math.Round((d02 - d98) / d50, 3)).ToString());
                                 #endregion
 
                                 #region ConformityIndex
                                 double volIsodoseLvl = myPlan.GetVolumeAtDose(Body, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
-                                _results.Add(_s + "/ CI / index 0.7-1 / " + referentiel, Math.Round(volIsodoseLvl / st.Volume, 3).ToString());
+                                _index.Add(_s + "/ CI " + _target.Id + " / index 0.7-1 / " + referentiel, Math.Round(volIsodoseLvl / _target.Volume, 3).ToString());
                                 #endregion
 
                                 #region PaddickConformityIndex
                                 double PIV = myPlan.GetVolumeAtDose(Body, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
-                                double TV_PIV = myPlan.GetVolumeAtDose(st, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
-                                _results.Add(_s + "/ PADDICK / index 0.7-1 / " + referentiel, Math.Round((TV_PIV * TV_PIV) / (st.Volume * PIV), 3).ToString());
+                                double TV_PIV = myPlan.GetVolumeAtDose(_target, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
+                                _index.Add(_s + "/ PADDICK " + _target.Id + " / index 0.7-1 / " + referentiel, Math.Round((TV_PIV * TV_PIV) / (_target.Volume * PIV), 3).ToString());
                                 #endregion
 
                                 #region GradientIndex
                                 double v50 = myPlan.GetVolumeAtDose(Body, 0.5 * (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
                                 double v100 = myPlan.GetVolumeAtDose(Body, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
-                                _results.Add(_s + "/ GI / index <3 / " + referentiel, Math.Round((v50 / v100), 2).ToString());
+                                _index.Add(_s + "/ GI " + _target.Id + " / index <3 / " + referentiel, Math.Round((v50 / v100), 2).ToString());
                                 #endregion
 
                                 #region RCI
-                                double volTIP = myPlan.GetVolumeAtDose(st, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
-                                _results.Add(_s + "/ RCI / index 0.9-2.5 / " + referentiel, Math.Round(volTIP / st.Volume, 3).ToString());
+                                double volTIP = myPlan.GetVolumeAtDose(_target, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
+                                _index.Add(_s + "/ RCI " + _target.Id + " / index 0.9-2.5 / " + referentiel, Math.Round(volTIP / _target.Volume, 3).ToString());
                                 #endregion
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show("Erreur dans le calcul des indices stéréotaxiques\n" + ex.Message);
+                                _token = false;
                             }
                         }
+
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Erreur dans le calcul des indices stéréotaxiques\n" + ex.Message);
+                        }
+
                     }
+
                 }
 
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erreur dans les indices\n" + ex.Message);
-                }
                 lineNumber++;
             }
+
             #endregion
 
             _results = _results.OrderBy(kvp => kvp.Key).ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
             _createExcelForStats.Fill(_results);
             _createExcelForStats.Close();
-            _generatePDF.Execute(_results);
+            _generatePDF.Execute(_results, _index);
             _streamReader.Close();
             RemoveLastNLines(_userFile, addNLines);
         }
+
         #region Calcul of similarity (Distance de Levenshtein)
         internal double CalculateSimilarity(string name, string key)
         {
@@ -386,7 +421,8 @@ namespace DoseCheck
             get { return _userFile; }
             set
             {
-                _userFile = System.IO.Path.Combine(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Template_dosi"), value + ".txt");
+                //_userFile = System.IO.Path.Combine(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Template_dosi"), value + ".txt");
+                _userFile = System.IO.Path.Combine(System.IO.Path.Combine(_model.Path, "Template_dosi"), value + ".txt");
                 //OnPropertyChanged(nameof(_userFile));
                 MyData();
                 //_generatePDF.PlanReport(_results, _oar_results, _model.Patient, _model.PlanSetup);

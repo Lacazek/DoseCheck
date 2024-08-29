@@ -1,1562 +1,4818 @@
 
 **********************************
-Debut de programme : 30/07/2024 14:48:48
-Ordinateur utilisé : B24X0004
+Debut de programme : 02/08/2024 16:14:39
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:48:58
+Fin de programme : 02/08/2024 16:14:47
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:49:59
-Ordinateur utilisé : B24X0004
+Debut de programme : 02/08/2024 16:15:43
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:50:09
+Fin de programme : 02/08/2024 16:15:48
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:50:13
-Ordinateur utilisé : B24X0004
+Debut de programme : 02/08/2024 16:17:13
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:50:22
+Fin de programme : 02/08/2024 16:17:21
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:51:49
-Ordinateur utilisé : B24X0004
+Debut de programme : 02/08/2024 18:07:50
+Ordinateur utilisé : B24X0008
+User : 127895
+
+Fichier ouvert
+
+Fin de programme : 02/08/2024 18:07:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:01:49
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:01:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:15:07
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:15:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:22:11
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:22:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:28:21
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:28:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:41:11
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:41:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:43:31
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:43:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:51:48
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:51:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 08:57:58
+Ordinateur utilisé : B24X0006
+User : 614512
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 08:58:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:00:07
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:00:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:00:17
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:00:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:00:52
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:01:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:01:43
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:01:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:02:55
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:03:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:04:00
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:10:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:14:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:15:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:28:42
+Ordinateur utilisé : B24X0006
+User : 614512
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:28:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 09:28:49
+Ordinateur utilisé : B24X0006
+User : 614512
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 09:28:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 10:26:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 10:27:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 10:30:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 10:31:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 10:34:22
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 10:34:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 10:50:24
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 10:50:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 10:53:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 10:53:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 10:54:51
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 10:54:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:14:28
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:14:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:20:22
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:20:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:22:14
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:22:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:27:30
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:27:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:32:15
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:32:25
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:33:40
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:33:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:34:42
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:34:51
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:38:05
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:38:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:38:27
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:38:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:38:59
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:39:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:39:28
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:39:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:47:15
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:47:22
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:54:28
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:54:42
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:55:31
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:55:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:55:45
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:55:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 11:57:56
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 11:58:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 12:01:38
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 12:01:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 12:02:01
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 12:02:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 12:03:19
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 12:03:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 12:10:09
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 12:10:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 12:11:32
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 12:11:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 12:12:10
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 12:12:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 12:13:04
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 12:13:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 14:11:22
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 14:11:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 14:32:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 14:32:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:12:43
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:14:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:14:15
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:14:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:14:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:15:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:15:13
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:15:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:18:16
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:19:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:19:25
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:19:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:20:34
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:21:00
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:21:06
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:21:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:28:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:29:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:32:15
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:32:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:33:08
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:33:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:42:29
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:42:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:43:56
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:44:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:49:51
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:49:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:50:00
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:50:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:56:35
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:56:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:57:09
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:57:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:57:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:57:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:58:33
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:58:39
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 15:59:19
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 15:59:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 16:20:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 16:20:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 16:29:27
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 16:29:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 16:33:57
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 16:34:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 16:34:28
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 16:34:38
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 16:35:03
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 16:35:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 05/08/2024 18:52:41
+Ordinateur utilisé : B24X0008
+User : 127895
+
+Fichier ouvert
+
+Fin de programme : 05/08/2024 18:52:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:00:42
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:00:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:14:35
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:14:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:17:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:18:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:21:19
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:21:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:22:31
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:22:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:23:13
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:23:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:23:35
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:23:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:41:21
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:41:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:42:19
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:42:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:46:48
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:46:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:47:09
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:47:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:49:16
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:49:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:49:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:49:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:49:47
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:49:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 08:50:11
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 08:50:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 09:08:27
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 09:08:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 09:11:21
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 09:11:31
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 09:15:54
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 09:16:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 09:18:06
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 09:18:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 09:20:03
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 09:20:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 09:38:32
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 09:38:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 11:11:14
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 11:11:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 11:17:41
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 11:17:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 11:55:48
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 11:55:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:00:31
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:00:38
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:05:56
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:06:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:06:31
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:06:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:07:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:07:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:18:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:19:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:19:39
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:19:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:26:43
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:26:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:34:44
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:34:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 12:35:07
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 12:35:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 13:53:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 13:54:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 14:08:34
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 14:08:51
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 14:12:31
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 14:12:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 14:27:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 14:28:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 14:28:08
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 14:28:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 14:47:30
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 14:47:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 14:47:49
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 14:47:59
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 14:58:51
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 14:59:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:07:00
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:07:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:07:57
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:08:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:12:22
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:12:32
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:17:32
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:17:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:21:14
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:21:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:25:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:26:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:28:34
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:28:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:46:18
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:46:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:48:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:48:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 15:51:33
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 15:51:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 16:03:05
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 16:03:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 16:03:49
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 16:03:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 06/08/2024 16:58:43
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 06/08/2024 16:58:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 08:34:27
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 08:34:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 08:35:18
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 08:35:23
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 08:37:07
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 08:37:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 08:51:29
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 08:51:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 08:55:26
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 08:55:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 09:02:04
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 09:02:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 09:11:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 09:12:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 09:22:32
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 09:22:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 09:23:12
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 09:23:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 10:45:03
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 10:45:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 11:39:32
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 11:39:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 11:43:48
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 11:43:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 11:44:45
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 11:44:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:01:20
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:01:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:07:57
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:08:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:09:21
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:09:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:11:45
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:11:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:12:52
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:13:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:14:17
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:14:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:14:38
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:14:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:15:08
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:15:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:15:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:16:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:17:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:17:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:19:05
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:19:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:20:02
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:20:08
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:20:31
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:20:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:21:00
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:21:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:30:46
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:30:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:31:20
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:31:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:33:12
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:34:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:34:27
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:34:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:35:43
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:36:08
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:37:52
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:38:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:38:22
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:39:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:40:05
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:45:18
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:46:10
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:46:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:47:17
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:47:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:47:47
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:47:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:48:36
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:48:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:48:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:49:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 12:51:14
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 12:51:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 13:00:19
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 13:00:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 13:04:27
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 13:04:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 13:06:26
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 13:06:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 13:08:34
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 13:08:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 13:09:29
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 13:09:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 14:09:28
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 14:09:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:10:35
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:10:45
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:19:48
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:19:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:20:07
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:20:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:20:16
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:20:22
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:24:43
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:24:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:25:42
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:25:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:33:07
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:33:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:41:48
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:41:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:49:10
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:49:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:52:37
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:52:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:56:25
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:56:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 07/08/2024 15:57:58
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 07/08/2024 15:58:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 12:16:59
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 12:17:08
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 12:28:59
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 12:29:07
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 12:56:27
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 12:56:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 13:08:26
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 13:08:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 13:17:15
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 13:17:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 13:26:10
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 13:26:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 13:36:03
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 13:36:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 14:20:52
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 14:21:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 14:27:25
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 14:27:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 14:41:46
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 14:41:56
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:00:49
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:00:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:09:00
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:09:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:12:20
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:12:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:16:33
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:16:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:18:06
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:18:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:19:00
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:19:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:22:30
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:22:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 15:48:21
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 15:48:31
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 16:18:53
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 16:19:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 16:19:30
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 16:19:38
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 16:35:42
+Ordinateur utilisé : B24X0006
+User : 614512
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 16:36:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 08/08/2024 16:38:00
+Ordinateur utilisé : B24X0002
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 08/08/2024 16:38:08
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 07:57:19
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 07:57:28
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 07:57:34
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 07:58:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 08:41:50
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 08:41:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 09:11:24
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 09:11:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 09:17:33
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 09:17:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 09:37:49
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 09:37:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 09:55:51
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 09:55:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 10:12:28
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 10:12:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 10:14:26
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 10:14:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 10:56:17
+Ordinateur utilisé : B24X0008
+User : 127895
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 10:57:06
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 11:25:15
+Ordinateur utilisé : B24X0007
+User : 033383
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 11:25:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 11:30:10
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 11:30:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 12:10:41
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 12:12:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 12:32:27
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 12:32:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:16:20
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:16:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:19:33
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:19:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:19:43
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:19:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:20:56
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:21:02
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:22:30
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:22:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:23:31
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:23:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:23:43
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:23:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:24:10
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:24:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:30:25
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:30:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:30:33
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:30:36
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:31:06
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:31:21
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:33:18
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:33:27
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:34:16
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:34:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:37:10
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:37:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:37:53
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:38:03
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:38:34
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:38:54
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:39:15
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:39:34
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:39:40
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:40:00
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:40:38
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:40:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:41:24
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:46:44
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:49:58
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:50:05
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:51:17
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:51:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:52:07
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:52:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:52:46
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:53:16
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:53:25
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:53:47
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:54:06
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:54:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:55:22
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:55:52
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:56:19
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:56:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:57:51
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:58:00
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:58:27
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 14:59:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 14:59:56
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:01:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:01:35
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:02:30
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:06:32
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:07:01
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:09:50
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:10:14
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:11:06
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:11:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:20:15
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:20:26
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:21:40
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:22:13
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:23:04
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:23:51
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:25:20
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:25:29
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:25:59
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:26:15
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:27:39
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:28:40
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:29:08
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:29:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:30:54
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:31:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:32:06
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:32:19
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:32:20
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:33:04
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:33:05
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:33:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:34:33
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:34:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:36:22
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:36:55
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:37:40
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:38:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:40:23
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:41:11
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:41:50
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:42:09
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:43:47
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:43:58
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:46:43
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:46:53
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:47:27
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:47:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:48:11
+Ordinateur utilisé : B24X0006
+User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:48:20
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 09/08/2024 15:49:26
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:52:01
+Fin de programme : 09/08/2024 15:49:39
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:52:40
-Ordinateur utilisé : B24X0004
+Debut de programme : 09/08/2024 15:52:16
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:52:47
+Fin de programme : 09/08/2024 15:52:23
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:55:14
-Ordinateur utilisé : B24X0004
+Debut de programme : 09/08/2024 15:56:10
+Ordinateur utilisé : B24X0006
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 09/08/2024 15:56:17
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 12/08/2024 07:49:16
+Ordinateur utilisé : B24X0008
+User : 127895
+
+Fichier ouvert
+
+Fin de programme : 12/08/2024 07:49:24
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 12/08/2024 07:57:05
+Ordinateur utilisé : B24X0008
+User : 127895
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:55:22
+Fin de programme : 12/08/2024 07:57:11
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:56:04
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 07:59:30
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:56:11
+Fin de programme : 12/08/2024 07:59:40
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:56:54
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 08:02:43
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:56:55
+Fin de programme : 12/08/2024 08:02:51
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:57:00
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 10:03:21
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:57:06
+Fin de programme : 12/08/2024 10:03:28
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:57:55
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 10:15:08
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:58:03
+Fin de programme : 12/08/2024 10:15:15
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:58:37
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 10:15:42
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:58:40
+Fin de programme : 12/08/2024 10:15:50
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:59:10
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 10:18:07
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:59:20
+Fin de programme : 12/08/2024 10:18:13
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:59:22
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 10:18:33
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:59:33
+Fin de programme : 12/08/2024 10:18:42
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:59:41
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 11:23:59
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 14:59:54
+Fin de programme : 12/08/2024 11:24:08
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 14:59:56
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 11:24:09
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:00:06
+Fin de programme : 12/08/2024 11:24:15
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:00:38
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 14:21:57
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:00:47
+Fin de programme : 12/08/2024 14:22:05
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:40:57
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 14:41:03
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:41:03
+Fin de programme : 12/08/2024 14:41:13
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:43:04
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 15:02:24
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:43:23
+Fin de programme : 12/08/2024 15:02:35
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:43:35
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 15:04:41
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:43:45
+Fin de programme : 12/08/2024 15:04:50
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:43:47
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 15:15:49
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:44:07
+Fin de programme : 12/08/2024 15:15:58
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:44:32
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 15:30:47
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:44:41
+Fin de programme : 12/08/2024 15:30:57
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:44:43
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 15:41:21
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:44:53
+Fin de programme : 12/08/2024 15:41:35
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:48:51
-Ordinateur utilisé : B24X0004
+Debut de programme : 12/08/2024 18:45:38
+Ordinateur utilisé : B24X0007
+User : 033383
+
+Fichier ouvert
+
+Fin de programme : 12/08/2024 18:45:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 13/08/2024 07:26:48
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:48:56
+Fin de programme : 13/08/2024 07:27:00
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:49:09
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 07:57:20
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:49:13
+Fin de programme : 13/08/2024 07:57:29
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:50:26
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 08:18:32
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:50:33
+Fin de programme : 13/08/2024 08:18:42
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:50:53
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 08:36:58
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:50:57
+Fin de programme : 13/08/2024 08:37:06
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:51:14
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 08:40:34
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:51:20
+Fin de programme : 13/08/2024 08:40:43
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:51:53
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 09:01:52
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:51:57
+Fin de programme : 13/08/2024 09:02:05
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:53:45
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 09:11:54
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:54:10
+Fin de programme : 13/08/2024 09:12:02
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:54:31
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 09:25:02
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:54:45
+Fin de programme : 13/08/2024 09:25:10
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:56:16
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 10:13:50
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:56:25
+Fin de programme : 13/08/2024 10:13:59
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:56:52
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 10:30:34
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:57:24
+Fin de programme : 13/08/2024 10:30:42
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:57:29
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 10:31:43
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:58:05
+Fin de programme : 13/08/2024 10:31:54
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:58:50
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 10:36:57
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:58:56
+Fin de programme : 13/08/2024 10:37:07
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 15:59:26
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 10:42:38
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 15:59:33
+Fin de programme : 13/08/2024 10:42:48
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:01:51
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 11:42:34
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:01:58
+Fin de programme : 13/08/2024 11:42:43
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:07:33
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 11:47:34
+Ordinateur utilisé : B24X0006
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 13/08/2024 11:47:41
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 13/08/2024 11:53:22
+Ordinateur utilisé : CHUN-ARI-CITRX3
+User : 127895
+
+Fichier ouvert
 
+Fin de programme : 13/08/2024 11:53:33
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 13/08/2024 11:55:20
+Ordinateur utilisé : CHUN-ARI-CITRX3
+User : 127895
+
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:07:40
+Fin de programme : 13/08/2024 11:55:30
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:16:42
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 13:28:34
+Ordinateur utilisé : B24X0006
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 13/08/2024 13:28:43
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 13/08/2024 14:12:05
+Ordinateur utilisé : CHUN-ARI-CITRX3
+User : 127895
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:16:47
+Fin de programme : 13/08/2024 14:12:14
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:18:28
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 14:25:21
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:18:35
+Fin de programme : 13/08/2024 14:25:29
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:28:54
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 14:25:59
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:29:01
+Fin de programme : 13/08/2024 14:26:10
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:31:29
-Ordinateur utilisé : B24X0004
+Debut de programme : 13/08/2024 14:36:24
+Ordinateur utilisé : B24X0006
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 13/08/2024 14:36:57
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 13/08/2024 17:12:03
+Ordinateur utilisé : B24X0009
+User : 033383
+
+Fichier ouvert
+
+Fin de programme : 13/08/2024 17:12:12
+Fichier Log ferme
+**********************************
 
+**********************************
+Debut de programme : 13/08/2024 17:21:34
+Ordinateur utilisé : B24X0009
+User : 033383
+
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:31:35
+Fin de programme : 13/08/2024 17:21:42
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:33:54
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 08:38:01
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:33:55
+Fin de programme : 14/08/2024 08:38:10
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:33:58
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 08:50:41
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:34:04
+Fin de programme : 14/08/2024 08:50:51
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:34:58
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 08:52:31
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:35:03
+Fin de programme : 14/08/2024 08:52:41
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:36:21
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 08:53:25
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:37:14
+Fin de programme : 14/08/2024 08:54:01
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:38:49
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 08:57:08
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:38:59
+Fin de programme : 14/08/2024 08:57:16
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:39:31
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 08:58:20
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:39:39
+Fin de programme : 14/08/2024 08:58:29
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:41:02
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:15:44
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:41:30
+Fin de programme : 14/08/2024 09:15:55
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:42:26
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:16:21
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:42:43
+Fin de programme : 14/08/2024 09:16:31
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:43:03
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:18:07
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:43:49
+Fin de programme : 14/08/2024 09:18:17
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:47:23
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:19:37
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:47:39
+Fin de programme : 14/08/2024 09:19:50
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:50:04
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:22:17
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:50:14
+Fin de programme : 14/08/2024 09:22:28
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 16:56:24
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:23:13
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 16:56:38
+Fin de programme : 14/08/2024 09:23:36
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:06:57
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:23:45
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:07:08
+Fin de programme : 14/08/2024 09:23:55
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:07:29
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 09:25:40
+Ordinateur utilisé : B24X0002
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/08/2024 09:25:49
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/08/2024 10:55:31
+Ordinateur utilisé : B24X0008
+User : 127895
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:07:38
+Fin de programme : 14/08/2024 10:55:43
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:09:07
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 10:56:39
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:09:17
+Fin de programme : 14/08/2024 10:56:51
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:36:53
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 10:57:29
+Ordinateur utilisé : B24X0002
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:37:08
+Fin de programme : 14/08/2024 10:57:39
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:37:53
-Ordinateur utilisé : B24X0004
+Debut de programme : 14/08/2024 10:59:04
+Ordinateur utilisé : B24X0002
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 14/08/2024 10:59:10
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/08/2024 11:21:25
+Ordinateur utilisé : B24X0008
+User : 127895
+
+Fichier ouvert
+
+Fin de programme : 14/08/2024 11:21:35
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/08/2024 15:14:37
+Ordinateur utilisé : B24X0008
+User : 127895
+
+Fichier ouvert
+
+Fin de programme : 14/08/2024 15:14:46
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/08/2024 15:30:21
+Ordinateur utilisé : B24X0006
+User : 614512
+
+Fichier ouvert
 
+Fin de programme : 14/08/2024 15:30:48
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 14/08/2024 16:26:30
+Ordinateur utilisé : B24X0008
+User : 127895
+
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:38:00
+Fin de programme : 14/08/2024 16:26:41
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:44:59
-Ordinateur utilisé : B24X0004
+Debut de programme : 19/08/2024 13:57:24
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:45:14
+Fin de programme : 19/08/2024 13:57:31
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:45:55
-Ordinateur utilisé : B24X0004
+Debut de programme : 19/08/2024 16:40:11
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:46:03
+Fin de programme : 19/08/2024 16:40:27
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 17:46:47
-Ordinateur utilisé : B24X0004
+Debut de programme : 19/08/2024 16:40:41
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 17:46:58
+Fin de programme : 19/08/2024 16:40:52
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 18:23:40
-Ordinateur utilisé : B24X0004
+Debut de programme : 19/08/2024 16:41:32
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 18:23:50
+Fin de programme : 19/08/2024 16:41:39
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 18:24:00
-Ordinateur utilisé : B24X0004
+Debut de programme : 19/08/2024 17:15:24
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 18:24:08
+Fin de programme : 19/08/2024 17:15:40
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 30/07/2024 18:25:29
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 12:44:42
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 30/07/2024 18:25:36
+Fin de programme : 20/08/2024 12:44:48
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:03:13
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 13:24:37
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:03:21
+Fin de programme : 20/08/2024 13:24:44
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:03:30
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 13:28:28
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:03:38
+Fin de programme : 20/08/2024 13:28:35
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:04:08
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 13:57:23
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:04:39
+Fin de programme : 20/08/2024 13:57:28
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:05:05
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 14:36:31
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:05:11
+Fin de programme : 20/08/2024 14:36:37
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:07:42
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 14:36:50
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:07:52
+Fin de programme : 20/08/2024 14:36:55
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:08:03
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 14:53:39
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:08:14
+Fin de programme : 20/08/2024 14:53:45
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:12:52
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 15:18:06
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:12:58
+Fin de programme : 20/08/2024 15:18:28
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:14:11
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 15:33:45
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:14:18
+Fin de programme : 20/08/2024 15:33:52
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:16:36
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 15:33:53
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:16:40
+Fin de programme : 20/08/2024 15:34:04
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:18:26
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 15:58:55
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:18:33
+Fin de programme : 20/08/2024 15:59:06
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:19:00
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 16:00:51
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:19:07
+Fin de programme : 20/08/2024 16:01:02
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:21:51
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 16:24:02
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:21:58
+Fin de programme : 20/08/2024 16:24:11
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:22:22
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 18:59:25
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:22:29
+Fin de programme : 20/08/2024 18:59:27
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:25:01
-Ordinateur utilisé : B24X0004
+Debut de programme : 20/08/2024 18:59:39
+Ordinateur utilisé : B24X0006
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 20/08/2024 18:59:50
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 22/08/2024 10:02:31
+Ordinateur utilisé : B24X0002
+User : 127895
+
+Fichier ouvert
+
+Fin de programme : 22/08/2024 10:03:12
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 22/08/2024 10:03:47
+Ordinateur utilisé : B24X0002
+User : 127895
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:26:35
+Fin de programme : 22/08/2024 10:03:53
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:27:08
-Ordinateur utilisé : B24X0004
+Debut de programme : 22/08/2024 10:29:31
+Ordinateur utilisé : B24X0001
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:27:15
+Fin de programme : 22/08/2024 10:29:50
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:29:24
-Ordinateur utilisé : B24X0004
+Debut de programme : 22/08/2024 10:32:19
+Ordinateur utilisé : B24X0001
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:29:31
+Fin de programme : 22/08/2024 10:32:29
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:29:42
-Ordinateur utilisé : B24X0004
+Debut de programme : 22/08/2024 11:35:13
+Ordinateur utilisé : B24X0001
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:30:04
+Fin de programme : 22/08/2024 11:35:24
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:30:17
-Ordinateur utilisé : B24X0004
+Debut de programme : 22/08/2024 11:36:02
+Ordinateur utilisé : B24X0001
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:30:35
+Fin de programme : 22/08/2024 11:36:11
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:30:39
-Ordinateur utilisé : B24X0004
+Debut de programme : 23/08/2024 12:31:28
+Ordinateur utilisé : B24X0002
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 23/08/2024 12:31:42
+Fichier Log ferme
+**********************************
 
+**********************************
+Debut de programme : 23/08/2024 16:32:39
+Ordinateur utilisé : B24X0008
+User : 127895
+
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:30:52
+Fin de programme : 23/08/2024 16:32:47
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:30:57
-Ordinateur utilisé : B24X0004
+Debut de programme : 26/08/2024 09:25:58
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:31:08
+Fin de programme : 26/08/2024 09:26:05
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:31:23
-Ordinateur utilisé : B24X0004
+Debut de programme : 26/08/2024 09:26:16
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:32:37
+Fin de programme : 26/08/2024 09:26:21
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:32:52
-Ordinateur utilisé : B24X0004
+Debut de programme : 26/08/2024 10:10:07
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:33:04
+Fin de programme : 26/08/2024 10:10:14
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:33:51
-Ordinateur utilisé : B24X0004
+Debut de programme : 26/08/2024 11:42:26
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:34:03
+Fin de programme : 26/08/2024 11:42:27
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:34:49
-Ordinateur utilisé : B24X0004
+Debut de programme : 26/08/2024 11:42:46
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:35:15
+Fin de programme : 26/08/2024 11:42:53
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:36:07
-Ordinateur utilisé : B24X0004
+Debut de programme : 26/08/2024 12:51:36
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:36:13
+Fin de programme : 26/08/2024 12:51:41
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:36:17
-Ordinateur utilisé : B24X0004
+Debut de programme : 26/08/2024 13:14:48
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:36:31
+Fin de programme : 26/08/2024 13:14:53
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:36:33
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 09:09:03
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:36:42
+Fin de programme : 27/08/2024 09:09:10
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:36:45
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 12:07:20
+Ordinateur utilisé : B24X0006
 User : 129391
+
+Fichier ouvert
+
+Fin de programme : 27/08/2024 12:07:37
+Fichier Log ferme
+**********************************
+
+**********************************
+Debut de programme : 27/08/2024 12:14:53
+Ordinateur utilisé : CHUN-ARI-CITRX2
+User : 127895
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:37:26
+Fin de programme : 27/08/2024 12:15:01
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:37:34
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 13:50:22
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:37:40
+Fin de programme : 27/08/2024 13:50:35
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:39:07
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 13:53:45
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:39:13
+Fin de programme : 27/08/2024 13:53:55
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 13:39:21
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 13:54:52
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 13:39:33
+Fin de programme : 27/08/2024 13:55:09
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:12:55
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 13:56:35
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:13:16
+Fin de programme : 27/08/2024 13:56:45
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:14:15
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:02:15
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:14:25
+Fin de programme : 27/08/2024 14:02:26
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:17:47
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:07:00
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:17:53
+Fin de programme : 27/08/2024 14:07:11
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:17:55
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:11:18
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:20:58
+Fin de programme : 27/08/2024 14:11:30
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:21:07
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:11:57
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:21:23
+Fin de programme : 27/08/2024 14:12:09
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:21:27
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:14:08
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:22:17
+Fin de programme : 27/08/2024 14:14:19
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:22:21
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:17:29
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:22:28
+Fin de programme : 27/08/2024 14:17:41
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:22:52
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:21:48
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:23:05
+Fin de programme : 27/08/2024 14:21:59
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:24:31
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:22:11
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:24:49
+Fin de programme : 27/08/2024 14:22:20
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:25:19
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:24:51
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:25:29
+Fin de programme : 27/08/2024 14:25:02
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:25:54
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:26:01
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:26:04
+Fin de programme : 27/08/2024 14:26:13
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:26:28
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:35:24
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:26:38
+Fin de programme : 27/08/2024 14:35:32
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:26:40
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:37:43
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:27:08
+Fin de programme : 27/08/2024 14:37:52
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:27:28
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:38:17
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:27:41
+Fin de programme : 27/08/2024 14:38:25
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:29:19
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:41:10
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:29:27
+Fin de programme : 27/08/2024 14:41:20
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:32:12
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:41:45
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:32:19
+Fin de programme : 27/08/2024 14:41:56
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:32:56
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:45:17
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:33:03
+Fin de programme : 27/08/2024 14:45:29
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:33:58
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:45:32
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:34:01
+Fin de programme : 27/08/2024 14:45:42
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:34:39
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:48:36
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:35:37
+Fin de programme : 27/08/2024 14:48:45
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:35:38
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:53:17
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:35:44
+Fin de programme : 27/08/2024 14:53:28
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:35:53
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:54:44
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:35:58
+Fin de programme : 27/08/2024 14:54:54
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:36:01
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:56:36
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:36:35
+Fin de programme : 27/08/2024 14:56:46
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:36:46
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:58:16
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:36:59
+Fin de programme : 27/08/2024 14:58:25
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:44:26
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 14:59:31
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:44:34
+Fin de programme : 27/08/2024 14:59:42
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:44:51
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:00:48
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:45:05
+Fin de programme : 27/08/2024 15:00:59
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:45:10
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:02:06
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:45:16
+Fin de programme : 27/08/2024 15:02:18
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:47:06
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:03:32
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:47:26
+Fin de programme : 27/08/2024 15:03:41
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:47:32
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:11:08
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:48:04
+Fin de programme : 27/08/2024 15:11:20
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:51:39
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:11:43
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:51:43
+Fin de programme : 27/08/2024 15:11:51
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:51:45
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:14:10
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:51:51
+Fin de programme : 27/08/2024 15:14:20
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:56:16
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:14:36
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:56:20
+Fin de programme : 27/08/2024 15:14:46
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:57:20
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:16:35
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:57:24
+Fin de programme : 27/08/2024 15:16:44
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:58:21
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:17:21
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:58:45
+Fin de programme : 27/08/2024 15:17:30
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:58:51
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:19:29
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:59:10
+Fin de programme : 27/08/2024 15:19:39
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:59:29
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:20:02
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 14:59:33
+Fin de programme : 27/08/2024 15:20:13
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 14:59:55
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:20:44
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:00:02
+Fin de programme : 27/08/2024 15:20:52
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:00:59
-Ordinateur utilisé : B24X0004
+Debut de programme : 27/08/2024 15:21:10
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:01:29
+Fin de programme : 27/08/2024 15:21:18
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:02:03
-Ordinateur utilisé : B24X0004
+Debut de programme : 28/08/2024 07:56:11
+Ordinateur utilisé : B24X0006
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:02:17
+Fin de programme : 28/08/2024 07:56:23
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:03:36
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 10:35:14
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:03:54
+Fin de programme : 29/08/2024 10:35:28
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:04:30
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 10:39:56
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:04:36
+Fin de programme : 29/08/2024 10:40:07
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:04:51
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 11:11:46
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:05:31
+Fin de programme : 29/08/2024 11:12:00
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:06:16
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 11:24:11
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:06:20
+Fin de programme : 29/08/2024 11:24:18
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:07:16
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 11:25:02
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:07:26
+Fin de programme : 29/08/2024 11:25:12
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:07:27
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 11:27:55
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:07:55
+Fin de programme : 29/08/2024 11:28:13
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:08:04
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 11:28:15
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:08:18
+Fin de programme : 29/08/2024 11:28:27
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:12:36
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 11:28:32
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:12:47
+Fin de programme : 29/08/2024 11:28:42
 Fichier Log ferme
 **********************************
 
 **********************************
-Debut de programme : 31/07/2024 15:14:42
-Ordinateur utilisé : B24X0004
+Debut de programme : 29/08/2024 11:29:56
+Ordinateur utilisé : CHUN-ARI-CITRX3
 User : 129391
 
 Fichier ouvert
 
-Fin de programme : 31/07/2024 15:14:50
+Fin de programme : 29/08/2024 11:30:05
 Fichier Log ferme
 **********************************

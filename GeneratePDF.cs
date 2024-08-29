@@ -106,14 +106,16 @@ namespace DoseCheck
             try
             {
                 _model = model;
-                WORKBOOK_TEMPLATE_DIR = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Template_dosi");
-                if (!Directory.Exists(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Resultats")))
+                string datetime = DateTime.Now.ToString("yyyy-MM-dd");
+                WORKBOOK_TEMPLATE_DIR = _model.Path;
+                if (!Directory.Exists(System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats",datetime)))
                 {
-                    Directory.CreateDirectory(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Resultats"));
-                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Resultats");
+                    Directory.CreateDirectory(System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats" , datetime));
+                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats" , datetime);
                 }
                 else
-                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Resultats");
+                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats" , datetime);
+
 
             }
             catch (Exception ex)
@@ -124,7 +126,7 @@ namespace DoseCheck
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         #region Execute
-        public void Execute(Dictionary<string, string> results)
+        public void Execute(Dictionary<string, string> results, Dictionary<string, string> index)
         {
             {
                 PlanningItem pitem = null;
@@ -363,11 +365,11 @@ namespace DoseCheck
 
                             try
                             {
-                                HI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("HI")).Value);
-                                CI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("CI")).Value);
-                                RCI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("RCI")).Value);
-                                PADDICK = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("PADDICK")).Value);
-                                GI = Convert.ToDouble(_results.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("GI")).Value);
+                                HI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("HI")).Value);
+                                CI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("CI")).Value);
+                                RCI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("RCI")).Value);
+                                PADDICK = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("PADDICK")).Value);
+                                GI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("GI")).Value);
                             }
                             catch (Exception ex)
                             {
@@ -403,7 +405,7 @@ namespace DoseCheck
                     MessageBox.Show("Problème lors du calcul des indices stéréotaxiques\n" + ex.Message);
                 }
                 string HtmlBody = ExportToHtml(Header, Header_OARs, InfoPlan, Prescription, EvalPlan, PTVSTEREO, PTV);
-                string outputpath = System.IO.Path.Combine(WORKBOOK_RESULT_DIR + DateTime.Now.ToString("yyyy-MM-dd") + "-" + _model.Patient.Name.ToString() + pitem.Id.ToString() + ".html");
+                string outputpath = System.IO.Path.Combine(WORKBOOK_RESULT_DIR + "\\"+ DateTime.Now.ToString("yyyy-MM-dd") + "-" + _model.Patient.Name.ToString() + pitem.Id.ToString() + ".html");
 
                 System.IO.File.WriteAllText(outputpath, HtmlBody);
                 System.Diagnostics.Process.Start(outputpath);
@@ -708,6 +710,7 @@ namespace DoseCheck
                 foreach (var obj in m_objectives)
                 {
                     if (!(obj.ID.Contains("PTV") || obj.ID.Contains("CTV") || obj.ID.Contains("ITV") || obj.ID.Contains("GTV")))
+                        // ||obj.DVHObjective.Contains("HI")|| obj.DVHObjective.Contains("CI") || obj.DVHObjective.Contains("RCI") || obj.DVHObjective.Contains("Paddick") || obj.DVHObjective.Contains("GI")))
                     {
                         if (!(obj.ExpectedValue.Contains("Min")) && !(obj.ExpectedValue.Contains("Median")))
                         {
