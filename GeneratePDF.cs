@@ -87,7 +87,7 @@ namespace DoseCheck
                 if (x <= y + tol && x > y + tol) return 0;
 
             }
-            
+
             return 1; // x > y ou x tgt < y
         }
         #endregion
@@ -108,13 +108,13 @@ namespace DoseCheck
                 _model = model;
                 string datetime = DateTime.Now.ToString("yyyy-MM-dd");
                 WORKBOOK_TEMPLATE_DIR = _model.Path;
-                if (!Directory.Exists(System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats",datetime)))
+                if (!Directory.Exists(System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats", datetime)))
                 {
-                    Directory.CreateDirectory(System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats" , datetime));
-                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats" , datetime);
+                    Directory.CreateDirectory(System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats", datetime));
+                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats", datetime);
                 }
                 else
-                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats" , datetime);
+                    WORKBOOK_RESULT_DIR = System.IO.Path.Combine(WORKBOOK_TEMPLATE_DIR, "Resultats", datetime);
 
 
             }
@@ -151,18 +151,18 @@ namespace DoseCheck
                             {
                                 obj.Vol = _results.FirstOrDefault(x => x.Key.Split('/')[0] == item.Key.Split('/')[0] && x.Key.Contains("Volume")).Value;
                                 obj.Referentiel = item.Key.Split('/')[4];
-  
-                            if (item.Key.Split('/')[3].Trim().ToLower() != "no tol" && !item.Key.Split('/')[3].Trim().ToLower().Contains("index"))
+
+                                if (item.Key.Split('/')[3].Trim().ToLower() != "no tol" && !item.Key.Split('/')[3].Trim().ToLower().Contains("index"))
                                 {
                                     obj.ID = item.Key.Split('/')[0];
                                     obj.DVHObjective = item.Key.Split('/')[3];
                                     obj.ExpectedValue = item.Key.Split('/')[2];
                                     obj.RealValue = item.Value;
 
-                                switch (CompareValues(Convert.ToDouble(item.Value.Substring(0, item.Value.Length-2).Trim()),
-                                        item.Key.Split('/')[3],
-                                        tol,
-                                        item.Key.Split('/')[0]))
+                                    switch (CompareValues(Convert.ToDouble(item.Value.Substring(0, item.Value.Length - 2).Trim()),
+                                            item.Key.Split('/')[3],
+                                            tol,
+                                            item.Key.Split('/')[0]))
                                     {
                                         case -1: // x < y
                                             obj.Met = true;
@@ -186,7 +186,7 @@ namespace DoseCheck
                                             throw new ArgumentException("Unexpected comparison result");
                                     }
                                 }
-                            else if (item.Key.Split('/')[3].Trim().ToLower().Contains( "dose max") || item.Key.Split('/')[3].Trim().ToLower().Contains("dose moyenne"))
+                                else if (item.Key.Split('/')[3].Trim().ToLower().Contains("dose max") || item.Key.Split('/')[3].Trim().ToLower().Contains("dose moyenne"))
                                 {
                                     obj.ID = item.Key.Split('/')[0];
                                     obj.DVHObjective = item.Key.Split('/')[3];
@@ -286,8 +286,9 @@ namespace DoseCheck
                             Xb = Math.Round(b.IsocenterPosition.x, _decimal);
                             Yb = Math.Round(b.IsocenterPosition.y, _decimal);
                             Zb = Math.Round(b.IsocenterPosition.z, _decimal);
-                            // ADDITION UM POUR CHAQUE FAISCEAU
-                            Um += b.Meterset.Value;
+                            // ADDITION UM POUR CHAQUE FAISCEAU                          
+                            if (!b.IsSetupField)
+                                Um = Math.Round(Um + b.Meterset.Value, _decimal);
                             i++;
                         }
                     }
@@ -299,7 +300,7 @@ namespace DoseCheck
 
                 string Iso = string.Format("X : {0} cm  Y : {2} cm  Z : {1} cm", Math.Abs(Math.Round((Xb - _model.Image.UserOrigin.x) / 10, _decimal)), Math.Abs(Math.Round((Yb - _model.Image.UserOrigin.y) / 10, _decimal)), Math.Abs(Math.Round((_model.Image.UserOrigin.z - Zb) / 10, _decimal)));
                 string[] InfoPlan = new string[] { _model.Patient.Name.ToString(), DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), _model.PlanSetup.Id.ToString(), _model.PlanSetup.Beams.First().TreatmentUnit.ToString(), _model.PlanSetup.CreationUserName.ToString() };
-                string[] EvalPlan = new string[] { _model.PlanSetup.TargetVolumeID.ToString(),_model.PlanSetup.Dose.DoseMax3D.ToString(), Math.Round(Um, _decimal).ToString(), Math.Round(Um / (_model.PlanSetup.TotalDose.Dose * 100), _decimal).ToString(), XMax.ToString(), Iso, _model.PlanSetup.PlanNormalizationMethod.ToString() };
+                string[] EvalPlan = new string[] { _model.PlanSetup.TargetVolumeID.ToString(), _model.PlanSetup.Dose.DoseMax3D.ToString(), Um.ToString(), Math.Round(Um / (_model.PlanSetup.DosePerFraction.Dose * 100), _decimal).ToString(), XMax.ToString(), Iso, _model.PlanSetup.PlanNormalizationMethod.ToString() };
                 var PrescriptionList = new List<string[]>();
 
                 try
@@ -405,7 +406,7 @@ namespace DoseCheck
                     MessageBox.Show("Problème lors du calcul des indices stéréotaxiques\n" + ex.Message);
                 }
                 string HtmlBody = ExportToHtml(Header, Header_OARs, InfoPlan, Prescription, EvalPlan, PTVSTEREO, PTV);
-                string outputpath = System.IO.Path.Combine(WORKBOOK_RESULT_DIR + "\\"+ DateTime.Now.ToString("yyyy-MM-dd") + "-" + _model.Patient.Name.ToString() + pitem.Id.ToString() + ".html");
+                string outputpath = System.IO.Path.Combine(WORKBOOK_RESULT_DIR + "\\" + DateTime.Now.ToString("yyyy-MM-dd") + "-" + _model.Patient.Name.ToString() + pitem.Id.ToString() + ".html");
 
                 System.IO.File.WriteAllText(outputpath, HtmlBody);
                 System.Diagnostics.Process.Start(outputpath);
@@ -535,7 +536,7 @@ namespace DoseCheck
             // FIN ENTETE
             strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
-            string[] headerEval2 = new string[] { "Volume de normalisation","D max [%]", "UM [UM]", "Facteur de modulation [UM/cGy]", "Taille de champ max en X [cm]", "Iso Faisceaux (&#916)", "Normalisation" };
+            string[] headerEval2 = new string[] { "Volume de normalisation", "D max [%]", "UM [UM]", "Facteur de modulation [UM/cGy]", "Taille de champ max en X [cm]", "Iso Faisceaux (&#916)", "Normalisation" };
             foreach (string myColumn301 in headerEval2)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
@@ -707,11 +708,12 @@ namespace DoseCheck
 
             try
             {
+                //string userFileContent = System.IO.File.ReadAllText(_model.UserFile).ToLower();
                 foreach (var obj in m_objectives)
                 {
-                    if (!(obj.ID.Contains("PTV") || obj.ID.Contains("CTV") || obj.ID.Contains("ITV") || obj.ID.Contains("GTV")))
-                        // ||obj.DVHObjective.Contains("HI")|| obj.DVHObjective.Contains("CI") || obj.DVHObjective.Contains("RCI") || obj.DVHObjective.Contains("Paddick") || obj.DVHObjective.Contains("GI")))
-                    {
+                    //if (!(obj.ID.Contains("PTV") || obj.ID.Contains("CTV") || obj.ID.Contains("ITV") || obj.ID.Contains("GTV")) || userFileContent.ToLower().Contains(obj.ID.ToLower()))
+                    // ||obj.DVHObjective.Contains("HI")|| obj.DVHObjective.Contains("CI") || obj.DVHObjective.Contains("RCI") || obj.DVHObjective.Contains("Paddick") || obj.DVHObjective.Contains("GI")))
+                    //{
                         if (!(obj.ExpectedValue.Contains("Min")) && !(obj.ExpectedValue.Contains("Median")))
                         {
                             strHTMLBuilder.Append("<tr >");
@@ -757,7 +759,7 @@ namespace DoseCheck
                             strHTMLBuilder.Append("</tr>");
                         }
                     }
-                }
+                //}
             }
             catch (Exception ex)
             {
