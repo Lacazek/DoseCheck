@@ -711,9 +711,9 @@ namespace DoseCheck
                 //string userFileContent = System.IO.File.ReadAllText(_model.UserFile).ToLower();
                 foreach (var obj in m_objectives)
                 {
-                    //if (!(obj.ID.Contains("PTV") || obj.ID.Contains("CTV") || obj.ID.Contains("ITV") || obj.ID.Contains("GTV")) || userFileContent.ToLower().Contains(obj.ID.ToLower()))
-                    // ||obj.DVHObjective.Contains("HI")|| obj.DVHObjective.Contains("CI") || obj.DVHObjective.Contains("RCI") || obj.DVHObjective.Contains("Paddick") || obj.DVHObjective.Contains("GI")))
-                    //{
+                    if (!(obj.ID.Contains("PTV") || obj.ID.Contains("CTV") || obj.ID.Contains("ITV") || obj.ID.Contains("GTV")
+                        ||obj.DVHObjective.Contains("HI")|| obj.DVHObjective.Contains("CI") || obj.DVHObjective.Contains("RCI") || obj.DVHObjective.Contains("Paddick") || obj.DVHObjective.Contains("GI")))
+                    {
                         if (!(obj.ExpectedValue.Contains("Min")) && !(obj.ExpectedValue.Contains("Median")))
                         {
                             strHTMLBuilder.Append("<tr >");
@@ -759,7 +759,7 @@ namespace DoseCheck
                             strHTMLBuilder.Append("</tr>");
                         }
                     }
-                //}
+                }
             }
             catch (Exception ex)
             {
