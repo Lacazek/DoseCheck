@@ -24,7 +24,7 @@
         </Rectangle>
         <Rectangle Height="434" Margin="753,0,0,0" Stroke="Black" VerticalAlignment="Center" RenderTransformOrigin="1.556,0.503" Fill="#FF95D1FF" HorizontalAlignment="Left" Width="47"/>
         <Rectangle HorizontalAlignment="Left" Height="434" Stroke="Black" VerticalAlignment="Center" Width="38" RenderTransformOrigin="1.556,0.503" Fill="#FF95D1FF"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="152" Margin="0,65,0,0" VerticalAlignment="Top" Width="192" Source=" B:\\RADIOTHERAPIE\\Killian\\Dosi\\Script\\DoseCheck\\Projects\\DoseCheck\\fisherMan4.png" Panel.ZIndex="-2">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="152" Margin="0,65,0,0" VerticalAlignment="Top" Width="192" Source=" B:\\RADIOTHERAPIE\\Killian\\Dosi\\Script\\DoseCheck\\fisherMan4.png" Panel.ZIndex="-2">
             <Image.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
