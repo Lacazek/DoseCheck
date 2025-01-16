@@ -1,18 +1,11 @@
-﻿using DoseCheck;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Documents;
-using System.Windows.Shapes;
-using System.Xml.Linq;
 using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 
@@ -93,7 +86,8 @@ namespace DoseCheck
                             {
                                 if (!constraint.ConstraintType.ToString().ToLower().Contains("mean"))
                                 {
-                                    if (_pairOrgan.GetOrgan.ContainsKey(OAR.OrganAtRiskId.ToLower()))
+                                    //if (_pairOrgan.GetOrgan.ContainsKey(OAR.OrganAtRiskId.ToLower()))
+                                    if (_pairOrgan.GetOrgan.Keys.Any(key => Regex.IsMatch(key, Regex.Escape(OAR.OrganAtRiskId), RegexOptions.IgnoreCase)))
                                     {
                                         pairstruct =
                                             (OAR.OrganAtRiskId.ToLower().Contains("@\"(?i)\\bpoumon\\s(homolateral|homolatéral)\\b\"")) ? "homolateral" :
@@ -118,7 +112,8 @@ namespace DoseCheck
                                         (OAR.OrganAtRiskId.ToLower().Contains("@\"(?i)\\bpoumon\\s(controlateral|controlatéral)\\b\"")) ? "controlateral" :
                                         OAR.OrganAtRiskId.ToLower();
 
-                                    if (_pairOrgan.GetOrgan.ContainsKey(OAR.OrganAtRiskId.ToLower()))
+                                    //if (_pairOrgan.GetOrgan.ContainsKey(OAR.OrganAtRiskId.ToLower()))
+                                    if (_pairOrgan.GetOrgan.Keys.Any(key => Regex.IsMatch(key, Regex.Escape(OAR.OrganAtRiskId), RegexOptions.IgnoreCase)))
                                     {
                                         _streamWriter.WriteLine(_pairOrgan.GetOrgan[pairstruct].Item1 + "; Dose moyenne ," + constraint.Value1 + constraint.Unit1 + "," + "Prescription_num&#233rique");
                                         addNLines++;

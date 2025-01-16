@@ -1,0 +1,45 @@
+ID Structure;Objectif,Limite,Referentiel
+Coeur; Dose moyenne,10Gy,CHU
+Coeur; D0%, 35Gy,CHU
+Coeur; D1%,35Gy,CHU
+Coeur; V20Gy, 10%, CHU
+Coeur; V40Gy, 5%, CHU
+Coeur; V15Gy, 3%, IUCT
+Coeur; D1cc, 30Gy, IUCT
+Coeur; V15Gy, 5%, IUCT
+Coeur; D1cc, 35Gy, IUCT
+Poumon D; D80%, 5Gy, CHU
+Poumon D; D20%, 20Gy, CHU
+Poumon D; D10%, 30Gy, CHU
+Poumon D; V5Gy, 25%, IUCT
+Poumon D; V20Gy, 10%, IUCT
+Poumon D; V30Gy, 8%, IUCT
+Poumon D; V5Gy, 30%, IUCT
+Poumon D; V20Gy, 15%, IUCT
+Poumon D; V30Gy, 10%, IUCT
+Poumon G; D80%, 5Gy, CHU
+Poumon G; D20%, 20Gy, CHU
+Poumon G; D10%, 30Gy, CHU
+Poumon G; V5Gy, 25%, IUCT
+Poumon G; V20Gy, 10%, IUCT
+Poumon G; V30Gy, 8%, IUCT
+Poumon G; V5Gy, 30%, IUCT
+Poumon G; V20Gy, 15%, IUCT
+Poumon G; V30Gy, 10%, IUCT
+Sein D; Dose moyenne, 5Gy, CHU
+Sein contro; D0%, 6Gy, IUCT
+Sein contro; D0%, 7Gy, IUCT
+Oesophage; V40Gy, 2%, CHU
+IVA; V30Gy, 2%, CHU
+IVA; D50%, 15Gy, CHU
+coronaires; V20Gy, 0%, CHU
+Plexus G; D0%,56Gy, CHU
+Thyroide; Dose moyenne,30Gy, CHU
+Thyroide; D5%, 30Gy, CHU
+moelle; D0%,30Gy, CHU
+PTV_dosi; V100%,100%, CHU
+PTV_dosi; V102%,10%, CHU
+PTV_dosi; V104%,0%, CHU
+CTV_dosi; V100%,100%, CHU
+CTV_dosi; V102%,10%, CHU
+CTV_dosi; V104%,0%, CHU

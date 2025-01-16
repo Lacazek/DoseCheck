@@ -1,0 +1,19 @@
+ID Structure;Objectif,Limite,Referentiel
+rectum;Dose max,76Gy,CHU
+rectum; D2%, 59Gy, CHU
+rectum;D25%,70Gy,CHU
+rectum;D50%,60Gy,CHU
+vessie;Dose max,80 Gy,CHU
+vessie; D2%,62Gy, CHU
+vessie;D25%,70Gy,CHU
+vessie;D50%,60Gy,CHU
+digestif;Dose max,66Gy,CHU
+digestif;D200cc,40Gy,CHU
+digestif;D450cc,30Gy,CHU
+cavite peritoneale; Dose max,66Gy,CHU
+cavite peritoneale; D200cc,40Gy,CHU
+cavite peritoneale; D450cc,30Gy,CHU
+femur d ;Dose max,55Gy,CHU
+femur d ;V50Gy,5 %,CHU
+femur g ;Dose max,55Gy,CHU
+femur g ;V50Gy,5 %,CHU

@@ -29,9 +29,9 @@ namespace DoseCheck
                 _patient = _model.Patient;
                 _course = _model.Course;
                 _plan = _model.PlanSetup;
-                if (!Directory.Exists("./out"))
-                    Directory.CreateDirectory("./out");
-                _excelForStats = new StreamWriter("out/Data_" + _patient.LastName + "_" + _patient.FirstName + ".csv");
+                if (!Directory.Exists(_model.Path + "out"))
+                    Directory.CreateDirectory(_model.Path + "out");
+                _excelForStats = new StreamWriter(_model.Path + "out//Data_" + _patient.LastName + "_" + _patient.FirstName + ".csv");
                 _excelForStats.WriteLine("patientID;courseID;planID;TotalDose;Dose/#;Fractions;Structure;Dose max; Dose moyenne; Dose mediane; Dose min");
             }
             catch (Exception ex)

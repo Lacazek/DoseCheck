@@ -1,0 +1,22 @@
+ID Structure;Objectif,Limite,Referentiel
+Coeur; Dose moyenne,10Gy,CHU
+Coeur; Dose max, 35Gy,CHU
+Coeur; D1%,35Gy,CHU
+Coeur; V20Gy, 10%, CHU
+Coeur; V40Gy, 5%, CHU
+Poumon D; Dose moyenne, 5Gy,CHU
+Poumon G; Dose moyenne, 13Gy, CHU
+Poumon G; D80%, 5Gy, CHU
+Poumon G; D20%, 20Gy, CHU
+Poumon G; D10%, 30Gy, CHU
+Sein D; Dose moyenne, 5Gy, CHU
+Sein contro; Dose moyenne, 5Gy, CHU
+Oesophage; V40Gy, 2%, CHU
+IVA; V30Gy, 2%, CHU
+IVA; Dose moyenne, 15Gy, CHU
+coronaires; V20Gy, 0%, CHU
+Plexus D; Dose max,56Gy, CHU
+Plexus G; Dose max,56Gy, CHU
+Thyroide; Dose moyenne,30Gy, CHU
+Thyroide; D5%, 30Gy, CHU
+moelle; Dose max,30Gy, CHU

@@ -1,0 +1,18 @@
+ID Structure;Objectif,Limite,Referentiel
+moelle; Dose max, 40Gy, CHU
+Moelle+10; Dose max, 49Gy,CHU
+Poumons-PTV; V30Gy,20%,CHU
+Poumons-PTV; V20Gy,30%,CHU
+Poumons-PTV; V10Gy,40%,CHU
+Poumons-PTV; V5Gy,42%,CHU
+Poumons; Dose moyenne, 13Gy,CHU
+Oesophage; Dose moyenne,28Gy,CHU
+Rein G; Dose moyenne, 5Gy, CHU
+Rein D; Dose moyenne, 5Gy, CHU
+Coeur; V30Gy,40 %,CHU
+Coeur; V40Gy,30 %,CHU
+Coeur; D33%,35 Gy,CHU
+Coeur; Dose max,30 Gy,CHU
+Coeur; Dose max,35Gy,CHU
+foie; V30Gy, 50%, CHU
+Plexus G; Dose max, 55Gy, CHU

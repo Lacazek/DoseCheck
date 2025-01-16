@@ -35,8 +35,9 @@ namespace DoseCheck
                 OK_Button.Visibility = Visibility.Collapsed;
 
                 //foreach (var item in Directory.GetFiles("B:\\RADIOTHERAPIE\\Physique\\43 - Routine\\scripting\\Template_dosi"))
-                foreach (var item in Directory.GetFiles(Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), "Template_dosi")))
-                {
+                //foreach (var item in Directory.GetFiles(Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString(), _model.Path + "Template_dosi")))
+                    foreach (var item in Directory.GetFiles(Path.Combine( _model.Path , "Template_dosi")))
+                    {
                     _model.AddFile = System.IO.Path.GetFileNameWithoutExtension(item);
                 }
 

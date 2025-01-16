@@ -1,0 +1,18 @@
+ID Structure;Objectif,Limite,Referentiel
+cochlee D; Dose max, 40Gy,CHU
+cochlee G; Dose max, 40Gy,CHU
+Moelle; Dose max, 42Gy, CHU
+Hippocampe G ; Dose max, 17Gy, CHU
+Hippocampe D ; Dose max, 17Gy, CHU
+Nerf Optique D; Dose max, 54Gy,CHU
+Nerf Optique G; Dose max, 54Gy,CHU
+Tronc cerebral; Dose max,54Gy,CHU
+chiasma; Dose max, 54Gy, CHU
+cristallin D; Dose max, 5Gy, CHU
+cristallin G; Dose max, 5Gy, CHU
+oeil G;Dose max,10Gy, CHU
+oeil D;Dose max,10Gy, CHU
+cristallin D; Dose moyenne, 3Gy, CHU
+cristallin G; Dose moyenne, 3Gy, CHU
+oeil G;Dose moyenne, 5Gy, CHU
+oeil D;Dose moyenne, 5Gy, CHU

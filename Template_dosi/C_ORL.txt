@@ -1,0 +1,16 @@
+ID Structure;Objectif,Limite,Referentiel
+moelle; Dose max, 39Gy, CHU
+moelle+5; Dose max, 45Gy, CHU
+moelle+10; Dose max, 50Gy, CHU
+Tronc cerebral; Dose max, 54Gy, CHU
+Parotide D; D50%, 26Gy, CHU
+Parotide D; Dose moyenne, 26Gy, CHU
+Parotide G; D50%, 26Gy, CHU
+Parotide G; Dose moyenne, 26Gy, CHU
+ATM; Dose max, 65Gy, CHU
+Larynx; Dose max, 55Gy, CHU
+Sous-maxillaire; Dose moyenne, 40Gy, CHU
+Chiasma; Dose max, 54Gy, CHU
+Cavite buccale; V30Gy, 50%, CHU
+Cavite buccale; V45Gy, 25%, CHU
+hypophyse; Dose max,50Gy, CHU

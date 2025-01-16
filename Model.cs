@@ -26,11 +26,13 @@ namespace DoseCheck
         private StreamWriter _logFile;
         private List<String> _list;
         private GetMyData _getMyData;
+        private readonly string _path;
 
 
         internal Model(Patient patient, Course course, PlanSetup plansetup, RTPrescription RTPrescription, VMS.TPS.Common.Model.API.Image image)
         {
-            _logFile = new StreamWriter("Log.txt", true);
+            _path = "B:\\RADIOTHERAPIE\\Killian\\Dosi\\Script\\DoseCheck\\";
+            _logFile = new StreamWriter(_path + "Log.txt", true);
             _logFile.WriteLine($"\n**********************************");
             _logFile.WriteLine($"Debut de programme : {DateTime.Now}");
             _logFile.WriteLine($"Ordinateur utilisé : {Environment.MachineName}");
@@ -90,6 +92,10 @@ namespace DoseCheck
         {
             get { return _getMyData.UserFile; }
             set { _getMyData.UserFile = value; }
+        }
+        internal string Path
+        {
+            get { return _path; }
         }
     }
 
