@@ -23,7 +23,7 @@ namespace DoseCheck
         internal Model(Patient patient, Course course, PlanSetup plansetup, RTPrescription RTPrescription, VMS.TPS.Common.Model.API.Image image)
         {
             _path = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString();
-            _logFile = new StreamWriter(_path + "Log.txt", true);
+            _logFile = new StreamWriter(System.IO.Path.Combine(_path,"Log.txt"), true);
             _logFile.WriteLine($"\n**********************************");
             _logFile.WriteLine($"Debut de programme : {DateTime.Now}");
             _logFile.WriteLine($"Ordinateur utilisé : {Environment.MachineName}");
