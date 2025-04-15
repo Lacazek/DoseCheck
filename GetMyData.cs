@@ -300,13 +300,14 @@ namespace DoseCheck
                         // Calcul des indices de stéréotaxie
                         try
                         {
-                            if (_target.Id.ToUpper().Contains("PTV") || _target.Id.ToUpper().Contains("CTV") || _target.Id.ToUpper().Contains("ITV") || _target.Id.ToUpper().Contains("GTV") && !st.Id.ToUpper().Contains("z_") && !_results.Keys.Any(x => x.Contains(st.Id)))
+                            if (_target.Id.ToUpper().Contains("PTV") || _target.Id.ToUpper().Contains("CTV") || _target.Id.ToUpper().Contains("ITV") || _target.Id.ToUpper().Contains("GTV") && !st.Id.ToUpper().Contains("z_"))// && !_results.Keys.Any(x => x.Contains(st.Id)))
                             {
                                 _index.Add(_s + "/ V107% " + _target.Id + "  / 107% / " + referentiel, Math.Round(myPlan.GetVolumeAtDose(_target, 1.07 * (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), 2).ToString() + " cc");
                                 _index.Add(_s + "/ D95%  " + _target.Id + " / 95% / " + referentiel, Math.Round(myPlan.GetDoseAtVolume(_target, 0.95 * (DosePerFraction.Dose * NbFraction), VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, 2).ToString() + " Gy");
                                 _index.Add(_s + "/ V95%  " + _target.Id + " / 95% / " + referentiel, Math.Round(myPlan.GetVolumeAtDose(_target, 0.95 * (DosePerFraction * NbFraction), VolumePresentation.Relative), 2).ToString() + " %");
                                 _index.Add(_s + "/ D50%  " + _target.Id + " / 50% / " + referentiel, Math.Round(myPlan.GetDoseAtVolume(_target, 0.50 * (DosePerFraction.Dose * NbFraction), VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, 2).ToString() + " Gy");
 
+                                double stx = _model.PlanSetup.Id.ToUpper().Contains("STX") ? 1 : 0.95;
                                 #region HomogenityIndex
                                 double d02 = myPlan.GetDoseAtVolume(_target, 2, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
                                 double d98 = myPlan.GetDoseAtVolume(_target, 98, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose;
@@ -315,13 +316,13 @@ namespace DoseCheck
                                 #endregion
 
                                 #region ConformityIndex
-                                double volIsodoseLvl = myPlan.GetVolumeAtDose(Body, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
+                                double volIsodoseLvl = myPlan.GetVolumeAtDose(Body, (DosePerFraction * NbFraction) * stx, VolumePresentation.AbsoluteCm3);
                                 _index.Add(_s + "/ CI " + _target.Id + " / index 0.7-1 / " + referentiel, Math.Round(volIsodoseLvl / _target.Volume, 3).ToString());
                                 #endregion
 
                                 #region PaddickConformityIndex
-                                double PIV = myPlan.GetVolumeAtDose(Body, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
-                                double TV_PIV = myPlan.GetVolumeAtDose(_target, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
+                                double PIV = myPlan.GetVolumeAtDose(Body, (DosePerFraction * NbFraction) * stx, VolumePresentation.AbsoluteCm3);
+                                double TV_PIV = myPlan.GetVolumeAtDose(_target, (DosePerFraction * NbFraction) * stx, VolumePresentation.AbsoluteCm3);
                                 _index.Add(_s + "/ PADDICK " + _target.Id + " / index 0.7-1 / " + referentiel, Math.Round((TV_PIV * TV_PIV) / (_target.Volume * PIV), 3).ToString());
                                 #endregion
 
@@ -332,7 +333,7 @@ namespace DoseCheck
                                 #endregion
 
                                 #region RCI
-                                double volTIP = myPlan.GetVolumeAtDose(_target, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3);
+                                double volTIP = myPlan.GetVolumeAtDose(_target, (DosePerFraction * NbFraction)* stx, VolumePresentation.AbsoluteCm3);
                                 _index.Add(_s + "/ RCI " + _target.Id + " / index 0.9-2.5 / " + referentiel, Math.Round(volTIP / _target.Volume, 3).ToString());
                                 #endregion
                                 _token = false;

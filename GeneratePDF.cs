@@ -334,7 +334,7 @@ namespace DoseCheck
                 string[] Header = new string[] { "ID", "Volume [cc]", "D max [%]", "D99% [%]", "D95% [%]", "D90% [%]", "D moyenne [Gy]", "D m&#233diane [Gy]", "D min [Gy]", "Validation" };
                 string[] Header_OARs = new string[] { "ID", "Volume [cc]", "Objectif", "Contrainte", "R&#233sultats", "R&#233f&#233rentiel", "Validation" };
                 double PADDICK = -1, HI = -1, CI = -1, GI = -1, RCI = -1;
-                string[,] PTVSTEREO = new string[150, 10];
+                string[,] PTVSTEREO = new string[150, 11];
                 string[,] PTV = new string[150, 10];
                 double V100, V95, V50;
                 double D100, D50;
@@ -367,7 +367,7 @@ namespace DoseCheck
                             try
                             {
                                 HI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("HI")).Value);
-                                CI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("CI")).Value);
+                                CI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("CI") && !x.Key.Contains("RCI")).Value);
                                 RCI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("RCI")).Value);
                                 PADDICK = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("PADDICK")).Value);
                                 GI = Convert.ToDouble(index.FirstOrDefault(x => x.Key.Contains(scan.Id) && x.Key.Contains("GI")).Value);
@@ -377,15 +377,16 @@ namespace DoseCheck
                                 MessageBox.Show("Erreur lors de l'extraction des résultats : " + ex.Message);
                             }
                             PTVSTEREO[y, 0] = scan.Id;
-                            PTVSTEREO[y, 1] = Math.Round(scan.Volume, 2).ToString();
-                            PTVSTEREO[y, 2] = Math.Round(_model.PlanSetup.GetVolumeAtDose(_model.StructureSet.Structures.FirstOrDefault(x => x.DicomType.ToUpper() == "EXTERNAL"), (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
-                            PTVSTEREO[y, 3] = Math.Round(_model.PlanSetup.GetVolumeAtDose(scan, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
-                            PTVSTEREO[y, 4] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 100, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, _decimal).ToString();
-                            PTVSTEREO[y, 5] = HI.ToString();
-                            PTVSTEREO[y, 6] = CI.ToString();
-                            PTVSTEREO[y, 7] = RCI.ToString();
-                            PTVSTEREO[y, 8] = PADDICK.ToString();
-                            PTVSTEREO[y, 9] = GI.ToString();
+                            PTVSTEREO[y, 1] = (_model.PlanSetup.Id.ToUpper().Contains("STX") ? 100 : 95) . ToString() + " %";
+                            PTVSTEREO[y, 2] = Math.Round(scan.Volume, 2).ToString();
+                            PTVSTEREO[y, 3] = Math.Round(_model.PlanSetup.GetVolumeAtDose(_model.StructureSet.Structures.FirstOrDefault(x => x.DicomType.ToUpper() == "EXTERNAL"), (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
+                            PTVSTEREO[y, 4] = Math.Round(_model.PlanSetup.GetVolumeAtDose(scan, (DosePerFraction * NbFraction), VolumePresentation.AbsoluteCm3), _decimal).ToString();
+                            PTVSTEREO[y, 5] = Math.Round(_model.PlanSetup.GetDoseAtVolume(scan, 100, VolumePresentation.Relative, DoseValuePresentation.Absolute).Dose, _decimal).ToString();
+                            PTVSTEREO[y, 6] = HI.ToString();
+                            PTVSTEREO[y, 7] = CI.ToString();
+                            PTVSTEREO[y, 8] = RCI.ToString();
+                            PTVSTEREO[y, 9] = PADDICK.ToString();
+                            PTVSTEREO[y, 10] = GI.ToString();
 
                             PTV[y, 0] = scan.Id;
                             PTV[y, 1] = Math.Round(scan.Volume, 2).ToString();
@@ -573,7 +574,7 @@ namespace DoseCheck
             // FIN ENTETE
             strHTMLBuilder.Append("<table border='1' cellpadding='1' cellspacing='0' bgcolor='#FAFAD2' align='center' width='900' style='border:dotted 1px Silver; font-family:arial; font-size:small;'>");
             strHTMLBuilder.Append("<tr>");
-            string[] headerPTVEVAL3 = new string[] { "ID", "Volume [cc]", "Vir [cc]", "VTir [cc]", "Isodose minimale [Gy]", "HI", "CI", "RCI", "Paddick", "GI" };
+            string[] headerPTVEVAL3 = new string[] { "ID", "Isodose de prescription","Volume [cc]", "Vir [cc]", "VTir [cc]", "Isodose minimale [Gy]", "HI", "CI", "RCI", "Paddick", "GI" };
             foreach (string myColumn301 in headerPTVEVAL3)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' align='center' bgcolor='#FAFAD2'>");
@@ -583,7 +584,7 @@ namespace DoseCheck
             strHTMLBuilder.Append("</tr>");
             strHTMLBuilder.Append("<tr>");
 
-            string[] headerPTVEVAL4 = new string[] { string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, "[<2.5]", "[0.7-1]", "[0.9-2.5]", "[0.7-1]", "[<3]" };
+            string[] headerPTVEVAL4 = new string[] { string.Empty,string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, "[<2.5]", "[0.7-1]", "[0.9-2.5]", "[0.7-1]", "[<3]" };
             foreach (string myColumn3 in headerPTVEVAL4)
             {
                 strHTMLBuilder.Append("<td style='font-family:arial' bgcolor='#FAFAD2' align='center'>");
@@ -593,10 +594,10 @@ namespace DoseCheck
             strHTMLBuilder.Append("</tr>");
             strHTMLBuilder.Append("<tr");
 
-            for (int i = 0; i < PTVSTEREO.Length / 10; i++)
+            for (int i = 0; i < PTVSTEREO.Length / 11; i++)
             {
                 strHTMLBuilder.Append("<tr>");
-                for (int j = 0; j < 10; j++)
+                for (int j = 0; j < 11; j++)
                 {
                     if (PTVSTEREO[i, 0] != null && !PTVSTEREO[i, 0].Contains("z_") && !PTVSTEREO[i, 0].Contains("z-"))
                     {

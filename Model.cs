@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VMS.TPS.Common.Model.API;
-using DoseCheck;
 using System.IO;
-using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
-using static System.Net.WebRequestMethods;
-using System.Windows;
-using System.ComponentModel;
 using System.Reflection;
 
 namespace DoseCheck
@@ -31,7 +22,7 @@ namespace DoseCheck
 
         internal Model(Patient patient, Course course, PlanSetup plansetup, RTPrescription RTPrescription, VMS.TPS.Common.Model.API.Image image)
         {
-            _path = "B:\\RADIOTHERAPIE\\Killian\\Dosi\\Script\\DoseCheck\\";
+            _path = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString();
             _logFile = new StreamWriter(_path + "Log.txt", true);
             _logFile.WriteLine($"\n**********************************");
             _logFile.WriteLine($"Debut de programme : {DateTime.Now}");
