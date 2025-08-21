@@ -1,13 +1,8 @@
-using System;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Collections.Generic;
+using DoseCheck;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using VMS.TPS.Common.Model.API;
-using VMS.TPS.Common.Model.Types;
-using DoseCheck;
 
 [assembly: AssemblyVersion("1.0.0.1")]
 
@@ -25,8 +20,9 @@ namespace VMS.TPS
 		{
             UserWindow window = new UserWindow(context.Patient, context.Course, context.PlanSetup, context.PlanSetup.RTPrescription, context.Image);
             try
-			{			
-				window.ShowDialog();
+			{
+                window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                window.ShowDialog();
 				window.CloseLog();
 			}
 			catch 

@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Input;
 using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 
@@ -302,7 +300,6 @@ namespace DoseCheck
                 string[] InfoPlan = new string[] { _model.Patient.Name.ToString(), DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), _model.PlanSetup.Id.ToString(), _model.PlanSetup.Beams.First().TreatmentUnit.ToString(), _model.PlanSetup.CreationUserName.ToString() };
                 string[] EvalPlan = new string[] { _model.PlanSetup.TargetVolumeID.ToString(), _model.PlanSetup.Dose.DoseMax3D.ToString(), Um.ToString(), Math.Round(Um / (_model.PlanSetup.DosePerFraction.Dose * 100), _decimal).ToString(), XMax.ToString(), Iso, _model.PlanSetup.PlanNormalizationMethod.ToString() };
                 var PrescriptionList = new List<string[]>();
-
                 try
                 {
                     foreach (var target in _model.PlanSetup.RTPrescription.Targets)
@@ -408,11 +405,9 @@ namespace DoseCheck
                 }
                 string HtmlBody = ExportToHtml(Header, Header_OARs, InfoPlan, Prescription, EvalPlan, PTVSTEREO, PTV);
                 string outputpath = System.IO.Path.Combine(WORKBOOK_RESULT_DIR + "\\" + DateTime.Now.ToString("yyyy-MM-dd") + "-" + _model.Patient.Name.ToString() + pitem.Id.ToString() + ".html");
-
                 System.IO.File.WriteAllText(outputpath, HtmlBody);
                 System.Diagnostics.Process.Start(outputpath);
                 System.Threading.Thread.Sleep(3000);
-
             }
         }
 
